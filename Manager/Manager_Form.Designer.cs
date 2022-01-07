@@ -42,10 +42,13 @@ namespace Compound_DB.Manager
             this.userNameLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.compoundTitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.addPenalty1 = new Compound_DB.Manager.AddPenalty();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -233,6 +236,7 @@ namespace Compound_DB.Manager
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.compoundTitleLabel);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -242,6 +246,13 @@ namespace Compound_DB.Manager
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(733, 148);
             this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(0, 154);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(0, 0);
+            this.panel4.TabIndex = 3;
             // 
             // compoundTitleLabel
             // 
@@ -286,12 +297,20 @@ namespace Compound_DB.Manager
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // addPenalty1
+            // 
+            this.addPenalty1.Location = new System.Drawing.Point(247, 141);
+            this.addPenalty1.Name = "addPenalty1";
+            this.addPenalty1.Size = new System.Drawing.Size(735, 433);
+            this.addPenalty1.TabIndex = 3;
+            // 
             // Manager_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(982, 577);
+            this.Controls.Add(this.addPenalty1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -327,5 +346,8 @@ namespace Compound_DB.Manager
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button residenceBtn;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panel4;
+        private AddPenalty addPenalty1;
     }
 }

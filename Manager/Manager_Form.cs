@@ -41,6 +41,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = checkinvoiceBtn.Top;
             sidePanel.Left = checkinvoiceBtn.Left;
             checkinvoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
+
         }
 
 
@@ -50,7 +51,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = addpenaltyBtn.Top;
             sidePanel.Left = addpenaltyBtn.Left;
             addpenaltyBtn.BackColor = Color.FromArgb(46, 51, 73);
-
+            addPenalty1.BringToFront();
         }
 
         private void servicesBtn_Click(object sender, EventArgs e)
@@ -123,5 +124,6 @@ namespace Compound_DB.Manager
             residenceBtn.BackColor = Color.FromArgb(24, 30, 54);
 
         }
+
     }
 }

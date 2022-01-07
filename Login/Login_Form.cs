@@ -75,7 +75,7 @@ namespace Compound_DB.Login
                 int id = 1;
                 string email = "a@rew.com";
                 string name = "Abdallah";
-                Resident.Resident_Form f = new Resident.Resident_Form(id, email, name);
+                Manager.Manager_Form f = new Manager.Manager_Form();
                 f.Show();
                 this.Hide();
 
