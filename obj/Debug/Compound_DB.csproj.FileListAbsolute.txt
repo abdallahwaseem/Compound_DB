@@ -1,0 +1,11 @@
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.exe.config
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.exe
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.pdb
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Properties.Resources.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csproj.GenerateResource.cache
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csproj.CoreCompileInputs.cache
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.exe
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.pdb
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csprojAssemblyReference.cache
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Login.Login_Form.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Resident.Resident_Form.resources
