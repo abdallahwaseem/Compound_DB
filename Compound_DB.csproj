@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compound_Staff\Staff_Controller.cs" />
+    <Compile Include="Compound_Staff\Staff_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\Staff_Form.Designer.cs">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBManager.cs" />
     <Compile Include="Login\Login_Controller.cs" />
     <Compile Include="Login\Login_Form.cs">
@@ -75,6 +82,9 @@
     <Compile Include="Resident\Resident_Form.Designer.cs">
       <DependentUpon>Resident_Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compound_Staff\Staff_Form.resx">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Compound_Staff\" />
+    <Folder Include="Manager\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\house_logo.png" />
@@ -130,6 +141,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\Search_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\working_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\working_panel_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\checklist_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\parking_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\salary_raise_resized.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

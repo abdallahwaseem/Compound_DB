@@ -117,41 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="working_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\working_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Exit_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parking_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\parking_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checklist_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\checklist_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="working_panel_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\working_panel_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="house_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\house_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogOut_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\LogOut_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Search_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Home_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salary_raise_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\salary_raise_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
