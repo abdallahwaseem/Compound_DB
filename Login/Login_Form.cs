@@ -13,6 +13,27 @@ namespace Compound_DB.Login
 {
     public partial class Login_Form : Form
     {
+        // Place holders for text box
+        //Textbox myTxtbx = new Textbox();
+        //myTxtbx.Text = "Enter text here...";
+        //email_textbox.GotFocus += GotFocus.EventHandle(RemoveText);
+        ////email_textBox.GotFocus += GotFocus.EventHandle(RemoveText);
+        //myTxtbx.LostFocus += LostFocus.EventHandle(AddText);
+
+        //public void RemoveText(object sender, EventArgs e)
+        //{
+        //    if (email_textbox.Text == "Enter text here...")
+        //    {
+        //        email_textbox.Text = "";
+        //    }
+        //}
+
+        //public void AddText(object sender, EventArgs e)
+        //{
+        //    if (string.IsNullOrWhiteSpace(myTxtbx.Text))
+        //        myTxtbx.Text = "Enter text here...";
+        //}
+
         // Make the form round
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -41,7 +62,6 @@ namespace Compound_DB.Login
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-
             if (email_textbox.Text == "" || email_textbox.Text == "")//validation part
             {
                 MessageBox.Show("Please enter email and password.");
