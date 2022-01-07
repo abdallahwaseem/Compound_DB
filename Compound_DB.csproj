@@ -54,6 +54,12 @@
     <Compile Include="Login\Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\AddPenalty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\AddPenalty.Designer.cs">
+      <DependentUpon>AddPenalty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Manager_Controller.cs" />
     <Compile Include="Manager\Manager_Form.cs">
       <SubType>Form</SubType>
@@ -71,6 +77,9 @@
     </Compile>
     <EmbeddedResource Include="Login\Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\AddPenalty.resx">
+      <DependentUpon>AddPenalty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Manager_Form.resx">
       <DependentUpon>Manager_Form.cs</DependentUpon>
