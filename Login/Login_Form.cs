@@ -79,7 +79,9 @@ namespace Compound_DB.Login
             string userType = controllerObj.GetUserType(username_textbox.Text);
             if (userType == "Manager")
             {
-
+                Manager.Manager_Form f = new Manager.Manager_Form();
+                f.Show();
+                this.Hide();
             }
             else if (userType == "Resident")
             {

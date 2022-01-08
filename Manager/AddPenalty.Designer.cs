@@ -32,14 +32,16 @@ namespace Compound_DB.Manager
             this.viewinvoicesBtn = new System.Windows.Forms.Button();
             this.invoicedataGridView = new System.Windows.Forms.DataGridView();
             this.showoverdueBtn = new System.Windows.Forms.Button();
+            this.addpenaltyBtn = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.invoicedataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // viewinvoicesBtn
             // 
-            this.viewinvoicesBtn.Location = new System.Drawing.Point(13, 210);
+            this.viewinvoicesBtn.Location = new System.Drawing.Point(111, 229);
             this.viewinvoicesBtn.Name = "viewinvoicesBtn";
-            this.viewinvoicesBtn.Size = new System.Drawing.Size(100, 50);
+            this.viewinvoicesBtn.Size = new System.Drawing.Size(142, 57);
             this.viewinvoicesBtn.TabIndex = 0;
             this.viewinvoicesBtn.Text = "View Invoices";
             this.viewinvoicesBtn.UseVisualStyleBackColor = true;
@@ -57,18 +59,29 @@ namespace Compound_DB.Manager
             // 
             // showoverdueBtn
             // 
-            this.showoverdueBtn.Location = new System.Drawing.Point(143, 210);
+            this.showoverdueBtn.Location = new System.Drawing.Point(306, 229);
             this.showoverdueBtn.Name = "showoverdueBtn";
-            this.showoverdueBtn.Size = new System.Drawing.Size(100, 50);
+            this.showoverdueBtn.Size = new System.Drawing.Size(110, 57);
             this.showoverdueBtn.TabIndex = 2;
             this.showoverdueBtn.Text = "Show Overdue";
             this.showoverdueBtn.UseVisualStyleBackColor = true;
             this.showoverdueBtn.Click += new System.EventHandler(this.showoverdueBtn_Click);
             // 
+            // addpenaltyBtn
+            // 
+            this.addpenaltyBtn.Location = new System.Drawing.Point(478, 229);
+            this.addpenaltyBtn.Name = "addpenaltyBtn";
+            this.addpenaltyBtn.Size = new System.Drawing.Size(111, 57);
+            this.addpenaltyBtn.TabIndex = 3;
+            this.addpenaltyBtn.Text = "Add Penalty";
+            this.addpenaltyBtn.UseVisualStyleBackColor = true;
+            this.addpenaltyBtn.Click += new System.EventHandler(this.addpenaltyBtn_Click);
+            // 
             // AddPenalty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.addpenaltyBtn);
             this.Controls.Add(this.showoverdueBtn);
             this.Controls.Add(this.invoicedataGridView);
             this.Controls.Add(this.viewinvoicesBtn);
@@ -84,5 +97,7 @@ namespace Compound_DB.Manager
         private System.Windows.Forms.Button viewinvoicesBtn;
         private System.Windows.Forms.DataGridView invoicedataGridView;
         private System.Windows.Forms.Button showoverdueBtn;
+        private System.Windows.Forms.Button addpenaltyBtn;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
