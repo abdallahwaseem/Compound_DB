@@ -124,5 +124,10 @@ namespace Compound_DB.Login
                 //}
             }
         }
+
+        private void Close_button_Click(object sender, EventArgs e)
+        {
+            //this.Close();
+        }
     }
 }

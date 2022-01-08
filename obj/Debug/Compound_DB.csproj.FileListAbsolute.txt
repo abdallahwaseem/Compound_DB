@@ -1,11 +1,19 @@
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.exe.config
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.exe
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\bin\Debug\Compound_DB.pdb
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Properties.Resources.resources
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csproj.GenerateResource.cache
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csproj.CoreCompileInputs.cache
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.exe
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.pdb
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.csprojAssemblyReference.cache
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Login.Login_Form.resources
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\Compound_DB\obj\Debug\Compound_DB.Resident.Resident_Form.resources
+C:\Users\user\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.exe.config
+C:\Users\user\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.exe
+C:\Users\user\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.pdb
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Login.Login_Form.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.Resident_Form.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.exe
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.pdb
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.UserControls.Invoices.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.Entrance_code.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.ParkingSlot.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.SellUnit.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.Rate_service.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.Req_service.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.UserControls.Services.resources
+C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.UserControls.View_Req.resources
