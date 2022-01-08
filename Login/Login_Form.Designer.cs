@@ -57,7 +57,7 @@ namespace Compound_DB.Login
             this.label1.Location = new System.Drawing.Point(173, 169);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 49);
+            this.label1.Size = new System.Drawing.Size(146, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOG IN";
             // 
@@ -113,7 +113,7 @@ namespace Compound_DB.Login
             this.clearFieldLabel.Location = new System.Drawing.Point(299, 432);
             this.clearFieldLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.clearFieldLabel.Name = "clearFieldLabel";
-            this.clearFieldLabel.Size = new System.Drawing.Size(111, 20);
+            this.clearFieldLabel.Size = new System.Drawing.Size(94, 17);
             this.clearFieldLabel.TabIndex = 5;
             this.clearFieldLabel.Text = "Clear Fields";
             this.clearFieldLabel.Click += new System.EventHandler(this.clearFieldLabel_Click);
@@ -154,7 +154,7 @@ namespace Compound_DB.Login
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Compound_DB.Properties.Resources.login_user;
+            this.pictureBox2.Image = global::Compound_DB.Properties.Resources.login_user1;
             this.pictureBox2.Location = new System.Drawing.Point(116, 254);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
@@ -169,7 +169,7 @@ namespace Compound_DB.Login
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox1.Image = global::Compound_DB.Properties.Resources.house_logo;
+            this.pictureBox1.Image = global::Compound_DB.Properties.Resources.login_user1;
             this.pictureBox1.Location = new System.Drawing.Point(213, 46);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -204,7 +204,7 @@ namespace Compound_DB.Login
             // 
             // Login_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(540, 604);

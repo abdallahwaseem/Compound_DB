@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Compound_DB.Resident.UserControls;
+using Compound_DB.UserControls;
+
 
 namespace Compound_DB.Resident
 {
@@ -24,6 +27,14 @@ namespace Compound_DB.Resident
             int nWidthEllipse,
             int nHeightEllipse
         );
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(userControl);
+            userControl.BringToFront();
+
+        }
         public Resident_Form(int id, string name, string email)
         {
             InitializeComponent();
@@ -33,6 +44,9 @@ namespace Compound_DB.Resident
             sidePanel.Top = invoiceBtn.Top;
             sidePanel.Left = invoiceBtn.Left;
             invoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
+            
+       
+
         }
 
         private void Resident_Form_Load(object sender, EventArgs e)
@@ -46,10 +60,12 @@ namespace Compound_DB.Resident
             sidePanel.Top = invoiceBtn.Top;
             sidePanel.Left = invoiceBtn.Left;
             invoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
+            Invoices I = new Invoices();
+            addUserControl(I);
         }
         private void invoiceBtn_Leave(object sender, EventArgs e)
         {
-            invoiceBtn.BackColor = Color.FromArgb(24, 30, 54);
+            invoiceBtn.BackColor = Color.FromArgb(0, 21, 64);
         }
         private void servicesBtn_Click(object sender, EventArgs e)
         {
@@ -57,11 +73,14 @@ namespace Compound_DB.Resident
             sidePanel.Top = servicesBtn.Top;
             sidePanel.Left = servicesBtn.Left;
             servicesBtn.BackColor = Color.FromArgb(46, 51, 73);
+            Services S = new Services();
+            addUserControl(S);
+       
         }
 
         private void servicesBtn_Leave(object sender, EventArgs e)
         {
-            servicesBtn.BackColor = Color.FromArgb(24, 30, 54);
+            servicesBtn.BackColor = Color.FromArgb(0, 21, 64);
         }
 
         private void entCodeBtn_Click(object sender, EventArgs e)
@@ -70,24 +89,28 @@ namespace Compound_DB.Resident
             sidePanel.Top = entCodeBtn.Top;
             sidePanel.Left = entCodeBtn.Left;
             entCodeBtn.BackColor = Color.FromArgb(46, 51, 73);
+            Entrance_code E = new Entrance_code();
+            addUserControl(E);
         }
 
         private void entCodeBtn_Leave(object sender, EventArgs e)
         {
-            entCodeBtn.BackColor = Color.FromArgb(24, 30, 54);
+            entCodeBtn.BackColor = Color.FromArgb(0, 21, 64);
         }
 
         private void sellUnitBtn_Click(object sender, EventArgs e)
         {
-            sidePanel.Height = sellUnitBtn.Height;
-            sidePanel.Top = sellUnitBtn.Top;
-            sidePanel.Left = sellUnitBtn.Left;
-            sellUnitBtn.BackColor = Color.FromArgb(46, 51, 73);
+            sidePanel.Height = TransferOwnershipBtn.Height;
+            sidePanel.Top = TransferOwnershipBtn.Top;
+            sidePanel.Left = TransferOwnershipBtn.Left;
+            TransferOwnershipBtn.BackColor = Color.FromArgb(46, 51, 73);
+            SellUnit SU = new SellUnit();
+            addUserControl(SU);
         }
 
         private void sellUnitBtn_Leave(object sender, EventArgs e)
         {
-            sellUnitBtn.BackColor = Color.FromArgb(24, 30, 54);
+            TransferOwnershipBtn.BackColor = Color.FromArgb(0, 21, 64);
         }
 
         private void parkingSlotBtn_Click(object sender, EventArgs e)
@@ -96,11 +119,13 @@ namespace Compound_DB.Resident
             sidePanel.Top = parkingSlotBtn.Top;
             sidePanel.Left = parkingSlotBtn.Left;
             parkingSlotBtn.BackColor = Color.FromArgb(46, 51, 73);
+            ParkingSlot PS = new ParkingSlot();
+            addUserControl(PS);
         }
 
         private void parkingSlotBtn_Leave(object sender, EventArgs e)
         {
-            parkingSlotBtn.BackColor = Color.FromArgb(24, 30, 54);
+            parkingSlotBtn.BackColor = Color.FromArgb(0, 21, 64);
         }
     }
 }
