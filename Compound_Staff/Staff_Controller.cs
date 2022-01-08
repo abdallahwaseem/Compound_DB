@@ -17,5 +17,16 @@ namespace Compound_DB.Compound_Staff
             dbMan = new DBManager();
         }
 
+        
+
+        public DataTable GetMyRequestsDetails(int Dept_Id)
+        {
+            string query = "SELECT Req.ID, Req_Status, R_name as Resident_Name, Unit_ID, Ser_Name as Service_Name" +
+                            "FROM Request Req, Resident Res, Provided_Services Serv" +
+                            "WHERE Serv.ID = Req.Service_ID AND Req.Resident_ID = Res.ID AND Req_Status = 'Pending' " +
+                            "AND Service_ID in (SELECT ID FROM Provided_Services WHERE Dept_ID =" + Dept_Id + ")";
+            return dbMan.ExecuteReader(query);
+        }
+
     }
 }

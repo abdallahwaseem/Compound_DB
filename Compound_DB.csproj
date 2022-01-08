@@ -54,7 +54,7 @@
       <DependentUpon>Staff_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Compound_Staff\WorkingPanel_Form.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Compound_Staff\WorkingPanel_Form.Designer.cs">
       <DependentUpon>WorkingPanel_Form.cs</DependentUpon>

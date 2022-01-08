@@ -93,7 +93,7 @@ namespace Compound_DB.Login
             this.login_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
             this.login_btn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_btn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.login_btn.Location = new System.Drawing.Point(116, 492);
+            this.login_btn.Location = new System.Drawing.Point(116, 486);
             this.login_btn.Margin = new System.Windows.Forms.Padding(4);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(294, 54);
