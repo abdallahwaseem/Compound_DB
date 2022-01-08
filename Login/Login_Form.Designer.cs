@@ -34,12 +34,14 @@ namespace Compound_DB.Login
             this.panel2 = new System.Windows.Forms.Panel();
             this.login_btn = new System.Windows.Forms.Button();
             this.clearFieldLabel = new System.Windows.Forms.Label();
-            this.username_textbox = new System.Windows.Forms.TextBox();
+            this.email_textbox = new System.Windows.Forms.TextBox();
+            this.password_textbox = new System.Windows.Forms.TextBox();
+            this.signUpBtn = new System.Windows.Forms.Button();
+            this.Close_button = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.password_textbox = new System.Windows.Forms.TextBox();
-            this.exitLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Close_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,7 +95,7 @@ namespace Compound_DB.Login
             this.login_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
             this.login_btn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_btn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.login_btn.Location = new System.Drawing.Point(116, 492);
+            this.login_btn.Location = new System.Drawing.Point(116, 456);
             this.login_btn.Margin = new System.Windows.Forms.Padding(4);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(294, 54);
@@ -116,22 +118,66 @@ namespace Compound_DB.Login
             this.clearFieldLabel.Size = new System.Drawing.Size(94, 17);
             this.clearFieldLabel.TabIndex = 5;
             this.clearFieldLabel.Text = "Clear Fields";
-            this.clearFieldLabel.Click += new System.EventHandler(this.clearFieldLabel_Click);
             // 
-            // username_textbox
+            // email_textbox
             // 
-            this.username_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.email_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.username_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
-            this.username_textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.username_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username_textbox.ForeColor = System.Drawing.Color.Gray;
-            this.username_textbox.Location = new System.Drawing.Point(189, 270);
-            this.username_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.username_textbox.Name = "username_textbox";
-            this.username_textbox.Size = new System.Drawing.Size(210, 28);
-            this.username_textbox.TabIndex = 6;
+            this.email_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.email_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_textbox.ForeColor = System.Drawing.Color.Gray;
+            this.email_textbox.Location = new System.Drawing.Point(189, 270);
+            this.email_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.email_textbox.Name = "email_textbox";
+            this.email_textbox.Size = new System.Drawing.Size(210, 17);
+            this.email_textbox.TabIndex = 6;
+            this.email_textbox.Text = "Enter username";
+            // 
+            // password_textbox
+            // 
+            this.password_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.password_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.password_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_textbox.ForeColor = System.Drawing.Color.Gray;
+            this.password_textbox.Location = new System.Drawing.Point(189, 350);
+            this.password_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.password_textbox.Name = "password_textbox";
+            this.password_textbox.Size = new System.Drawing.Size(210, 17);
+            this.password_textbox.TabIndex = 6;
+            this.password_textbox.Text = "Enter password";
+            // 
+            // signUpBtn
+            // 
+            this.signUpBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.signUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
+            this.signUpBtn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.signUpBtn.Location = new System.Drawing.Point(116, 518);
+            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.signUpBtn.Name = "signUpBtn";
+            this.signUpBtn.Size = new System.Drawing.Size(294, 54);
+            this.signUpBtn.TabIndex = 4;
+            this.signUpBtn.Text = "SIGN UP";
+            this.signUpBtn.UseVisualStyleBackColor = false;
+            this.signUpBtn.Click += new System.EventHandler(this.login_btn_Click);
+            // 
+            // Close_button
+            // 
+            this.Close_button.Image = global::Compound_DB.Properties.Resources.Exit_Icon;
+            this.Close_button.Location = new System.Drawing.Point(469, 7);
+            this.Close_button.Name = "Close_button";
+            this.Close_button.Size = new System.Drawing.Size(56, 39);
+            this.Close_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Close_button.TabIndex = 7;
+            this.Close_button.TabStop = false;
+            this.Close_button.Click += new System.EventHandler(this.Close_button_Click);
             // 
             // pictureBox3
             // 
@@ -178,40 +224,17 @@ namespace Compound_DB.Login
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // password_textbox
-            // 
-            this.password_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
-            this.password_textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.password_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_textbox.ForeColor = System.Drawing.Color.Gray;
-            this.password_textbox.Location = new System.Drawing.Point(189, 350);
-            this.password_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.password_textbox.Name = "password_textbox";
-            this.password_textbox.PasswordChar = '*';
-            this.password_textbox.Size = new System.Drawing.Size(210, 28);
-            this.password_textbox.TabIndex = 6;
-            // 
-            // exitLabel
-            // 
-            this.exitLabel.AutoSize = true;
-            this.exitLabel.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitLabel.Location = new System.Drawing.Point(491, 9);
-            this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(37, 44);
-            this.exitLabel.TabIndex = 7;
-            this.exitLabel.Text = "X";
-            this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
-            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(540, 604);
-            this.Controls.Add(this.exitLabel);
+            this.Controls.Add(this.Close_button);
             this.Controls.Add(this.password_textbox);
-            this.Controls.Add(this.username_textbox);
+            this.Controls.Add(this.email_textbox);
             this.Controls.Add(this.clearFieldLabel);
+            this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -225,6 +248,7 @@ namespace Compound_DB.Login
             this.Name = "Login_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.Close_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -243,9 +267,10 @@ namespace Compound_DB.Login
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Label clearFieldLabel;
-        private System.Windows.Forms.TextBox username_textbox;
+        private System.Windows.Forms.TextBox email_textbox;
         private System.Windows.Forms.TextBox password_textbox;
-        private System.Windows.Forms.Label exitLabel;
+        private System.Windows.Forms.Button signUpBtn;
+        private System.Windows.Forms.PictureBox Close_button;
     }
 }
 
