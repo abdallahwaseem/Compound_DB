@@ -109,6 +109,8 @@
             this.requestRaiseBtn.TabIndex = 1;
             this.requestRaiseBtn.Text = "Request Raise";
             this.requestRaiseBtn.UseVisualStyleBackColor = true;
+            this.requestRaiseBtn.Click += new System.EventHandler(this.requestRaiseBtn_Click);
+            this.requestRaiseBtn.Leave += new System.EventHandler(this.requestRaiseBtn_Leave);
             // 
             // parkingBtn
             // 
@@ -124,6 +126,8 @@
             this.parkingBtn.TabIndex = 1;
             this.parkingBtn.Text = "Parking";
             this.parkingBtn.UseVisualStyleBackColor = true;
+            this.parkingBtn.Click += new System.EventHandler(this.parkingBtn_Click);
+            this.parkingBtn.Leave += new System.EventHandler(this.parkingBtn_Leave);
             // 
             // servicesBtn
             // 
@@ -139,6 +143,8 @@
             this.servicesBtn.TabIndex = 1;
             this.servicesBtn.Text = "Services";
             this.servicesBtn.UseVisualStyleBackColor = true;
+            this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);
+            this.servicesBtn.Leave += new System.EventHandler(this.servicesBtn_Leave);
             // 
             // workingPanelBtn
             // 
@@ -154,6 +160,8 @@
             this.workingPanelBtn.TabIndex = 1;
             this.workingPanelBtn.Text = "Working Panel";
             this.workingPanelBtn.UseVisualStyleBackColor = true;
+            this.workingPanelBtn.Click += new System.EventHandler(this.workingPanelBtn_Click);
+            this.workingPanelBtn.Leave += new System.EventHandler(this.workingPanelBtn_Leave);
             // 
             // panel3
             // 

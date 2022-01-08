@@ -187,6 +187,7 @@ namespace Compound_DB.Login
             this.password_textbox.Location = new System.Drawing.Point(189, 350);
             this.password_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.password_textbox.Name = "password_textbox";
+            this.password_textbox.PasswordChar = '*';
             this.password_textbox.Size = new System.Drawing.Size(210, 28);
             this.password_textbox.TabIndex = 6;
             // 
