@@ -22,3 +22,6 @@ C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.Genera
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.exe
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.pdb
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.Staff_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.services.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.staff.resources

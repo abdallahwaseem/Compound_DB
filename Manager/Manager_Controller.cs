@@ -23,29 +23,29 @@ namespace Compound_DB.Manager
 
         public int UpdatePenalty()
         {
-            string query = "UPDATE Invoice SET Penalty = Amount * 0.1";
+            string query = "UPDATE Invoice SET Penalty = Amount * 0.1 Where Inv_Status='Overdue'";
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public int InsertService(string Ser_Name, int Price, int Dept_ID)
+        public int InsertService(string Ser_Name, float Price, int Dept_ID)
         {
             string query = "Insert into Provided_Services(Ser_Name,Price,Dept_ID)" + "Values('" + Ser_Name + "'," + Price + "," + Dept_ID + ");";
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public int UpdatePriceService(int newPrice,string Ser_Name)
+        public int UpdatePriceService(float newPrice,string Ser_Name)
         {
             string query = "UPDATE Provided_Services SET Price = " + newPrice + " WHERE Ser_Name = '" + Ser_Name + "';";
             return dbMan.ExecuteNonQuery(query);
         }
-        public int InsertStaff(string Staff_Name, string DoB, char Gender,int Dept_ID,int Salary,int Rating,string Phone_Number,string User_Name)
+        public int InsertStaff(string Staff_Name, string DoB, char Gender,int Dept_ID,float Salary,string Phone_Number,string User_Name)
         {
-            string query = "Insert into Compound_Staff(Staff_Name,Dob,Gender,Dept_ID,Salary,Rating,Phone_Number,Username)" + "Values('" + Staff_Name + "','" + DoB  + "','" + Gender + "',"+Dept_ID+","+Salary+","+Rating+",'"+Phone_Number+"','"+User_Name+"');";
+            string query = "Insert into Compound_Staff(Staff_Name,Dob,Gender,Dept_ID,Salary,Phone_Number,Username)" + "Values('" + Staff_Name + "','" + DoB  + "','" + Gender + "',"+Dept_ID+","+Salary+",'"+Phone_Number+"','"+User_Name+"');";
             return dbMan.ExecuteNonQuery(query);
         }
-        public int InsertLoginDetails(string Username, string Password, string UserType )
+        public int InsertLoginDetailsStaff(string Username, string Password,string User_Type)
         {
-            string query = "Insert into Login_Details(Login_Username,Login_Password,User_Type)" + "Values('" + Username + "','" + Password + "','" + UserType + "');";
+            string query = "Insert into Login_Details(Login_Username,Login_Password,User_Type)" + "Values('" + Username + "','" + Password + "','"+User_Type+"');";
             return dbMan.ExecuteNonQuery(query);
         }
         public int UpdateStaffSalary(int ID,int newSalary)
@@ -94,34 +94,39 @@ namespace Compound_DB.Manager
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public int OverdueDates()
+        public int UpdatetOverdueInvoices()
         {
-            string query = "Select Due_Date FROM Invoices ;";
-            return (int)dbMan.ExecuteScalar(query);
+            DateTime today = DateTime.Today;
+            string query = "UPDATE Invoice SET Inv_Status = 'Overdue' Where Due_Date <= '"+today+"';";
+            return dbMan.ExecuteNonQuery(query);
         }
-
-        public DataTable SelectOverdueInvoices(string due_date)
+        public DataTable ViewOverDueInvoices()
         {
-            var today = DateTime.Today;
-            DateTime odue_date = Convert.ToDateTime(due_date);
-            int differenceYear = DateTime.Compare(today, odue_date);
-            string query;
-            if (differenceYear > 0)
-            {
-                query = "UPDATE Invoice SET Inv_Status = 'Overdue';";
-
-            }
-            else
-            {
-                query = "";
-            }
+            string query = "SELECT R_Name,Due_Date,Inv_Type,Amount FROM Invoice I,Resident R Where R.ID=I.Resident_ID AND Inv_Status='Overdue';";
             return dbMan.ExecuteReader(query);
         }
 
         public DataTable SelectInvoices()
         {
-            string query = "SELECT Resident_ID,Due_Date,Inv_Status,Inv_Type,Amount FROM Invoice ;";
+            string query = "SELECT R_Name,Due_Date,Inv_Status,Inv_Type,Amount FROM Invoice I,Resident R Where R.ID=I.Resident_ID ;";
             return  dbMan.ExecuteReader(query); 
+        }
+        public DataTable PenaltyTotalAmount()
+        {
+            string query = "Select R_Name,Amount,Penalty,(Amount+Penalty) as Total_Amount FROM Invoice I,Resident R Where R.ID=I.Resident_ID AND Inv_Status='Overdue';";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable GetDept_ID()
+        {
+            string query = "SELECT ID FROM Department";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable GetSer_Name()
+        {
+            string query = "SELECT Ser_Name FROM Provided_Services";
+            return dbMan.ExecuteReader(query);
         }
         public void TerminateConnection()
         {

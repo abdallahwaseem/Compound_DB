@@ -34,10 +34,19 @@ namespace Compound_DB.Manager
 
         private void showoverdueBtn_Click(object sender, EventArgs e)
         {
-               DataTable dt = controllerObj.SelectInvoices();
+            int result = controllerObj.UpdatetOverdueInvoices();
+            DataTable dt = controllerObj.ViewOverDueInvoices();
             invoicedataGridView.DataSource = dt;
             invoicedataGridView.Refresh();
 
+        }
+
+        private void addpenaltyBtn_Click(object sender, EventArgs e)
+        {
+            int result = controllerObj.UpdatePenalty();
+            DataTable dt = controllerObj.PenaltyTotalAmount();
+            invoicedataGridView.DataSource = dt;
+            invoicedataGridView.Refresh();
         }
     }
 }

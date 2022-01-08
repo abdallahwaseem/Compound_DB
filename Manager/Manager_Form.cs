@@ -60,7 +60,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = servicesBtn.Top;
             sidePanel.Left = servicesBtn.Left;
             servicesBtn.BackColor = Color.FromArgb(46, 51, 73);
-
+            services1.BringToFront();
         }
 
         private void sellUnitBtn_Click(object sender, EventArgs e)
@@ -78,6 +78,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = staffBtn.Top;
             sidePanel.Left = staffBtn.Left;
             staffBtn.BackColor = Color.FromArgb(46, 51, 73);
+            staff1.BringToFront();
 
         }
 

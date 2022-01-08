@@ -48,7 +48,9 @@ namespace Compound_DB.Manager
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.services1 = new Compound_DB.Manager.services();
             this.addPenalty1 = new Compound_DB.Manager.AddPenalty();
+            this.staff1 = new Compound_DB.Manager.staff();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -297,6 +299,13 @@ namespace Compound_DB.Manager
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // services1
+            // 
+            this.services1.Location = new System.Drawing.Point(247, 141);
+            this.services1.Name = "services1";
+            this.services1.Size = new System.Drawing.Size(732, 423);
+            this.services1.TabIndex = 4;
+            // 
             // addPenalty1
             // 
             this.addPenalty1.Location = new System.Drawing.Point(247, 141);
@@ -304,12 +313,21 @@ namespace Compound_DB.Manager
             this.addPenalty1.Size = new System.Drawing.Size(735, 433);
             this.addPenalty1.TabIndex = 3;
             // 
+            // staff1
+            // 
+            this.staff1.Location = new System.Drawing.Point(247, 142);
+            this.staff1.Name = "staff1";
+            this.staff1.Size = new System.Drawing.Size(732, 423);
+            this.staff1.TabIndex = 5;
+            // 
             // Manager_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(982, 577);
+            this.Controls.Add(this.staff1);
+            this.Controls.Add(this.services1);
             this.Controls.Add(this.addPenalty1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -349,5 +367,7 @@ namespace Compound_DB.Manager
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel4;
         private AddPenalty addPenalty1;
+        private services services1;
+        private staff staff1;
     }
 }
