@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compound_Staff\Staff_Controller.cs" />
+    <Compile Include="Compound_Staff\Staff_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\Staff_Form.Designer.cs">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compound_Staff\WorkingPanel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\WorkingPanel_Form.Designer.cs">
+      <DependentUpon>WorkingPanel_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBManager.cs" />
     <Compile Include="Login\Login_Controller.cs" />
     <Compile Include="Login\Login_Form.cs">
@@ -53,6 +66,31 @@
     </Compile>
     <Compile Include="Login\Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\AddPenalty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\AddPenalty.Designer.cs">
+      <DependentUpon>AddPenalty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manager_Controller.cs" />
+    <Compile Include="Manager\Manager_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manager_Form.Designer.cs">
+      <DependentUpon>Manager_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,8 +153,26 @@
     <Compile Include="UserControls\View_Req.Designer.cs">
       <DependentUpon>View_Req.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compound_Staff\Staff_Form.resx">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compound_Staff\WorkingPanel_Form.resx">
+      <DependentUpon>WorkingPanel_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\AddPenalty.resx">
+      <DependentUpon>AddPenalty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manager_Form.resx">
+      <DependentUpon>Manager_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\services.resx">
+      <DependentUpon>services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,10 +219,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Compound_Staff\" />
-    <Folder Include="Manager\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Pictures\house_logo.png" />
   </ItemGroup>
@@ -226,6 +279,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\spaces.png" />
+    <None Include="Pictures\working_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\working_panel_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\checklist_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\parking_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\salary_raise_resized.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
