@@ -56,7 +56,6 @@ namespace Compound_DB.Manager
             this.invoicedataGridView.RowTemplate.Height = 24;
             this.invoicedataGridView.Size = new System.Drawing.Size(732, 204);
             this.invoicedataGridView.TabIndex = 1;
-            // 
             // showoverdueBtn
             // 
             this.showoverdueBtn.Location = new System.Drawing.Point(306, 229);

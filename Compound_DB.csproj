@@ -104,6 +104,18 @@
     <Compile Include="Manager\Manager_Form.Designer.cs">
       <DependentUpon>Manager_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\residentcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\residentcontrol.Designer.cs">
+      <DependentUpon>residentcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\sellingunitsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\sellingunitsUserControl.Designer.cs">
+      <DependentUpon>sellingunitsUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\services.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Manager_Form.resx">
       <DependentUpon>Manager_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\residentcontrol.resx">
+      <DependentUpon>residentcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\sellingunitsUserControl.resx">
+      <DependentUpon>sellingunitsUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\services.resx">
       <DependentUpon>services.cs</DependentUpon>

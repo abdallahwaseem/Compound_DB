@@ -51,3 +51,10 @@ D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compou
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.csprojAssemblyReference.cache
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.ChangePassword_Form.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.StaffSettings_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.ChangePassword_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.MyRequest_ControlForm.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.RaiseRequest_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.StaffSettings_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.WorkingPanel_ControlForm.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.residentcontrol.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.sellingunitsUserControl.resources
