@@ -168,11 +168,6 @@ namespace Compound_DB.Login
             controllerObj.TerminateConnection();
             this.Close();
         }
-
-        private void Close_button_Click(object sender, EventArgs e)
-        {
-            //this.Close();
-        }
     }
 }
 // Hashing trial
