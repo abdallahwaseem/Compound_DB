@@ -46,7 +46,6 @@ namespace Compound_DB.Compound_Staff
                 myRequestsIdsComboBox.Items.Add(item);
             }
         }
-
         private void requestCompleted_Click(object sender, EventArgs e)
         {
             if (myRequestsIdsComboBox.SelectedIndex < 0)

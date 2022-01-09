@@ -16,21 +16,38 @@ namespace Compound_DB.Compound_Staff
         {
             dbMan = new DBManager();
         }
-        public DataTable GetAllRequestsDetails(int Dept_Id)
+        public DataTable GetAllRequestsDetails(int Dept_Id) // Without parking slot
         {
             string query = "SELECT Req.ID, Req_Status, R_name as Resident_Name, Unit_ID"
-                            + ", Ser_Name as Service_Name FROM Request Req, Resident Res," + 
-                            " Provided_Services Serv WHERE Serv.ID = Req.Service_ID AND " + 
-                            "Req.Resident_ID = Res.ID AND Req_Status = 'Pending' AND "+ 
-                            "Service_ID in ( SELECT ID FROM Provided_Services WHERE Dept_ID =" + 1 + ")";
+                            + ", Ser_Name as Service_Name FROM Request Req, Resident Res," +
+                            " Provided_Services Serv WHERE Serv.ID = Req.Service_ID AND " +
+                            "Req.Resident_ID = Res.ID AND Req_Status = 'Pending' AND Serv.Ser_Name != 'Parking Slot' AND " +
+                            "Service_ID in ( SELECT ID FROM Provided_Services WHERE Dept_ID =" + Dept_Id + ")";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetParkingSlotRequestsDetails(int Dept_Id) // With parking slot
+        {
+            string query = "SELECT Req.ID, Req_Status, R_name as Resident_Name, Unit_ID"
+                            + ", Ser_Name as Service_Name FROM Request Req, Resident Res," +
+                            " Provided_Services Serv WHERE Serv.ID = Req.Service_ID AND " +
+                            "Req.Resident_ID = Res.ID AND Req_Status = 'Pending' AND Serv.Ser_Name = 'Parking Slot' AND " +
+                            "Service_ID in ( SELECT ID FROM Provided_Services WHERE Dept_ID =" + Dept_Id + ")";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable GetEmptyParkingSlotsIds(int requestId)
+        {
+            string query = "SELECT Parking.ID FROM Parking_Slot as Parking WHERE Parking.Parking_Slot_Status = 'Empty' " +
+                           "AND Parking.Building_ID IN (SELECT Res.Building_ID FROM Resident Res WHERE Res.ID IN " +
+                           "( SELECT Req.Resident_ID FROM Request Req WHERE Req.ID = " + requestId + "))";
             return dbMan.ExecuteReader(query);
         }
 
         public DataTable GetMyRequestsDetails(int staffId)
         {
-            string query = "SELECT Req.ID, Req_Status, R_name as Resident_Name, Unit_ID, Ser_Name as Service_Name "+
-                            "FROM Request Req, Resident Res, Provided_Services Serv WHERE Req.Assigned_Staff_ID = "+ staffId  +
-                            " AND Serv.ID = Req.Service_ID AND Req.Resident_ID = Res.ID AND Req_Status = 'Assigned'";
+            string query = "SELECT Req.ID, Req_Status, R_name as Resident_Name, Unit_ID, Ser_Name as Service_Name " +
+                            "FROM Request Req, Resident Res, Provided_Services Serv WHERE Req.Assigned_Staff_ID = " + staffId +
+                            " AND Serv.ID = Req.Service_ID  AND Req.Resident_ID = Res.ID AND Req_Status = 'Assigned'";
             return dbMan.ExecuteReader(query);
         }
         public DataTable GetMyCompletedRequestsDetails(int staffId)
@@ -43,7 +60,7 @@ namespace Compound_DB.Compound_Staff
 
         public int AcceptRequest(int staffId, int reqId)
         {
-            string query = "UPDATE Request SET Assigned_Staff_ID = "+ staffId+ ", Req_Status = 'Assigned' WHERE ID = " + reqId;
+            string query = "UPDATE Request SET Assigned_Staff_ID = " + staffId + ", Req_Status = 'Assigned' WHERE ID = " + reqId;
             return dbMan.ExecuteNonQuery(query);
         }
         public int CompleteRequest(int staffId, int reqId)
@@ -84,6 +101,7 @@ namespace Compound_DB.Compound_Staff
         //    string query = "SELECT Staff_Name , New_Salary, Req_Status FROM Raise_Request, Compound_Staff WHERE Staff_ID = ID AND Staff_ID = " + staffId;
         //    return dbMan.ExecuteReader(query);
         //}
+        // TODO update two queries below
         public string GetStaffDoB(int staffId)
         {
             string query = "SELECT DoB FROM Compound_Staff WHERE ID = " + staffId;

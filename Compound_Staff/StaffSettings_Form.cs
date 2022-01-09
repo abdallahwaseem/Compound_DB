@@ -33,6 +33,7 @@ namespace Compound_DB.Compound_Staff
         private void StaffSettings_Form_Load(object sender, EventArgs e)
         {
             name_textbox.Text = staffName;
+
             //dob_textbox.Text = controllerObj.GetStaffDoB(staffId) == null ? "" : controllerObj.GetStaffDoB(staffId);
             phoneNum_textbox.Text = controllerObj.GetStaffPhoneNum(staffId) == null ? "" : controllerObj.GetStaffPhoneNum(staffId);
             double currentSalary = 0;
@@ -56,11 +57,9 @@ namespace Compound_DB.Compound_Staff
             f.Show();
             this.Hide();
         }
-
-
         private void login_btn_Click(object sender, EventArgs e)
         {
-            Compound_Staff.ChangePassword_Form f = new ChangePassword_Form();
+            Compound_Staff.ChangePassword_Form f = new ChangePassword_Form(staffId, staffName, departmentName, username, departmentId);
             f.Show();
             this.Hide();
         }

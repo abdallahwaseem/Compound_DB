@@ -58,6 +58,12 @@
     <Compile Include="Compound_Staff\MyRequests_Form.Designer.cs">
       <DependentUpon>MyRequests_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compound_Staff\ParkingSlotRequests_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\ParkingSlotRequests_Form.Designer.cs">
+      <DependentUpon>ParkingSlotRequests_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compound_Staff\RaiseRequest_Form.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Compound_Staff\MyRequests_Form.resx">
       <DependentUpon>MyRequests_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compound_Staff\ParkingSlotRequests_Form.resx">
+      <DependentUpon>ParkingSlotRequests_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compound_Staff\RaiseRequest_Form.resx">
       <DependentUpon>RaiseRequest_Form.cs</DependentUpon>

@@ -53,6 +53,12 @@ namespace Compound_DB.Login
             string query = "SELECT D_Name FROM Department WHERE ID =" + deptId + ";";
             return (string)dbMan.ExecuteScalar(query);
         }
+        public int ChangePassword(string username, string newPassword)
+        {
+            string query = "UPDATE Login_Details SET Login_Password = '" + newPassword + "' WHERE Login_Username = '" + username + "'";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
         public void TerminateConnection()
         {
             dbMan.CloseConnection();

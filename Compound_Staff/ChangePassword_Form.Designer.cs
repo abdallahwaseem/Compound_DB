@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.confirmPassTextBox = new System.Windows.Forms.TextBox();
+            this.newPassTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.currentPassTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.login_btn = new System.Windows.Forms.Button();
+            this.updatePass_btn = new System.Windows.Forms.Button();
+            this.cancel_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,37 +55,37 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "CHANGE PASSWORD";
             // 
-            // textBox10
+            // confirmPassTextBox
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.confirmPassTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Gray;
-            this.textBox10.Location = new System.Drawing.Point(214, 152);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(210, 28);
-            this.textBox10.TabIndex = 11;
+            this.confirmPassTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.confirmPassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.confirmPassTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPassTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.confirmPassTextBox.Location = new System.Drawing.Point(214, 152);
+            this.confirmPassTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.confirmPassTextBox.Name = "confirmPassTextBox";
+            this.confirmPassTextBox.PasswordChar = '*';
+            this.confirmPassTextBox.Size = new System.Drawing.Size(210, 28);
+            this.confirmPassTextBox.TabIndex = 11;
             // 
-            // textBox9
+            // newPassTextBox
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.newPassTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Gray;
-            this.textBox9.Location = new System.Drawing.Point(214, 116);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(210, 28);
-            this.textBox9.TabIndex = 12;
+            this.newPassTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.newPassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.newPassTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPassTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.newPassTextBox.Location = new System.Drawing.Point(214, 116);
+            this.newPassTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.newPassTextBox.Name = "newPassTextBox";
+            this.newPassTextBox.PasswordChar = '*';
+            this.newPassTextBox.Size = new System.Drawing.Size(210, 28);
+            this.newPassTextBox.TabIndex = 12;
             // 
             // label12
             // 
@@ -96,21 +97,21 @@
             this.label12.TabIndex = 8;
             this.label12.Text = "Confirm Password";
             // 
-            // textBox8
+            // currentPassTextBox
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.currentPassTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(214, 80);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(210, 28);
-            this.textBox8.TabIndex = 13;
+            this.currentPassTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.currentPassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.currentPassTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPassTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.currentPassTextBox.Location = new System.Drawing.Point(214, 80);
+            this.currentPassTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.currentPassTextBox.Name = "currentPassTextBox";
+            this.currentPassTextBox.PasswordChar = '*';
+            this.currentPassTextBox.Size = new System.Drawing.Size(210, 28);
+            this.currentPassTextBox.TabIndex = 13;
             // 
             // label11
             // 
@@ -132,21 +133,39 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "Current Password";
             // 
-            // login_btn
+            // updatePass_btn
             // 
-            this.login_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.updatePass_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.login_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
-            this.login_btn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_btn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.login_btn.Location = new System.Drawing.Point(214, 225);
-            this.login_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(210, 61);
-            this.login_btn.TabIndex = 14;
-            this.login_btn.Text = "UPDATE PASSWORD";
-            this.login_btn.UseVisualStyleBackColor = false;
+            this.updatePass_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
+            this.updatePass_btn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatePass_btn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.updatePass_btn.Location = new System.Drawing.Point(214, 225);
+            this.updatePass_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.updatePass_btn.Name = "updatePass_btn";
+            this.updatePass_btn.Size = new System.Drawing.Size(210, 61);
+            this.updatePass_btn.TabIndex = 14;
+            this.updatePass_btn.Text = "UPDATE PASSWORD";
+            this.updatePass_btn.UseVisualStyleBackColor = false;
+            this.updatePass_btn.Click += new System.EventHandler(this.updatePass_btn_Click);
+            // 
+            // cancel_btn
+            // 
+            this.cancel_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancel_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(130)))), ((int)(((byte)(143)))));
+            this.cancel_btn.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_btn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.cancel_btn.Location = new System.Drawing.Point(214, 294);
+            this.cancel_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.cancel_btn.Name = "cancel_btn";
+            this.cancel_btn.Size = new System.Drawing.Size(210, 61);
+            this.cancel_btn.TabIndex = 14;
+            this.cancel_btn.Text = "RETURN TO PROFILE";
+            this.cancel_btn.UseVisualStyleBackColor = false;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // ChangePassword_Form
             // 
@@ -154,11 +173,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(504, 510);
-            this.Controls.Add(this.login_btn);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.cancel_btn);
+            this.Controls.Add(this.updatePass_btn);
+            this.Controls.Add(this.confirmPassTextBox);
+            this.Controls.Add(this.newPassTextBox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.currentPassTextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
@@ -174,12 +194,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox confirmPassTextBox;
+        private System.Windows.Forms.TextBox newPassTextBox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox currentPassTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button login_btn;
+        private System.Windows.Forms.Button updatePass_btn;
+        private System.Windows.Forms.Button cancel_btn;
     }
 }
