@@ -17,7 +17,7 @@ namespace Compound_DB.Compound_Staff
         int staffId;
         string staffName;
         int departmentId;
-        string deparmentName;
+        string departmentName;
         public Staff_Form(int id, string inputStaffName,string inputUsername, int deptId, string deptName)
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Left = workingPanelBtn.Left;
             workingPanel_ControlForm1.BringToFront();
             departmentId = deptId;
-            deparmentName = deptName;
+            departmentName = deptName;
             username = inputUsername;
             staffName = inputStaffName;
             staffId = id;
@@ -43,7 +43,7 @@ namespace Compound_DB.Compound_Staff
         private void Staff_Form_Load(object sender, EventArgs e)
         {
             userNameLabel.Text = staffName;
-            deptLabel.Text = deparmentName;
+            deptLabel.Text = departmentName;
         }
         private void logOutBtn_Click(object sender, EventArgs e)
         {
@@ -96,12 +96,20 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Height = requestRaiseBtn.Height;
             sidePanel.Top = requestRaiseBtn.Top;
             sidePanel.Left = requestRaiseBtn.Left;
+            raiseRequest_Form1.BringToFront();
             requestRaiseBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void requestRaiseBtn_Leave(object sender, EventArgs e)
         {
             requestRaiseBtn.BackColor = Color.FromArgb(4, 57, 109);
+        }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            StaffSettings_Form form = new StaffSettings_Form(staffId, staffName, departmentName, username, departmentId);
+            form.Show();
+            this.Hide();
         }
     }
 }

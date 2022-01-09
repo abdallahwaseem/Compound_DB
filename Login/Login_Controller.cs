@@ -48,7 +48,6 @@ namespace Compound_DB.Login
             string query = "SELECT Dept_ID FROM Compound_Staff WHERE Username = '" + username + "';";
             return (int)dbMan.ExecuteScalar(query);
         }
-        //SELECT D_Name FROM Department WHERE ID = 1
         public string GetStaffDeptName(int deptId)
         {
             string query = "SELECT D_Name FROM Department WHERE ID =" + deptId + ";";

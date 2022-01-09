@@ -28,37 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.myRequestsGrid = new System.Windows.Forms.DataGridView();
-            this.searchMyRequestsBtn = new System.Windows.Forms.Button();
+            this.raiseRequestsGrid = new System.Windows.Forms.DataGridView();
+            this.showReqStateBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.raiseAmountTextBox = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.myRequestsGrid)).BeginInit();
+            this.submitRaiseReqBtn = new System.Windows.Forms.Button();
+            this.newSalaryAmountTextBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.raiseRequestsGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // myRequestsGrid
+            // raiseRequestsGrid
             // 
-            this.myRequestsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.myRequestsGrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myRequestsGrid.Location = new System.Drawing.Point(0, 65);
-            this.myRequestsGrid.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.myRequestsGrid.Name = "myRequestsGrid";
-            this.myRequestsGrid.ReadOnly = true;
-            this.myRequestsGrid.RowHeadersWidth = 51;
-            this.myRequestsGrid.RowTemplate.Height = 24;
-            this.myRequestsGrid.Size = new System.Drawing.Size(610, 288);
-            this.myRequestsGrid.TabIndex = 15;
+            this.raiseRequestsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.raiseRequestsGrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.raiseRequestsGrid.Location = new System.Drawing.Point(0, 65);
+            this.raiseRequestsGrid.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.raiseRequestsGrid.Name = "raiseRequestsGrid";
+            this.raiseRequestsGrid.ReadOnly = true;
+            this.raiseRequestsGrid.RowHeadersWidth = 51;
+            this.raiseRequestsGrid.RowTemplate.Height = 24;
+            this.raiseRequestsGrid.Size = new System.Drawing.Size(610, 288);
+            this.raiseRequestsGrid.TabIndex = 15;
             // 
-            // searchMyRequestsBtn
+            // showReqStateBtn
             // 
-            this.searchMyRequestsBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.searchMyRequestsBtn.Location = new System.Drawing.Point(769, 65);
-            this.searchMyRequestsBtn.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.searchMyRequestsBtn.Name = "searchMyRequestsBtn";
-            this.searchMyRequestsBtn.Size = new System.Drawing.Size(119, 77);
-            this.searchMyRequestsBtn.TabIndex = 14;
-            this.searchMyRequestsBtn.Text = "Show Request State";
-            this.searchMyRequestsBtn.UseVisualStyleBackColor = true;
+            this.showReqStateBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.showReqStateBtn.Location = new System.Drawing.Point(769, 65);
+            this.showReqStateBtn.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.showReqStateBtn.Name = "showReqStateBtn";
+            this.showReqStateBtn.Size = new System.Drawing.Size(119, 77);
+            this.showReqStateBtn.TabIndex = 14;
+            this.showReqStateBtn.Text = "Show Request State";
+            this.showReqStateBtn.UseVisualStyleBackColor = true;
+            this.showReqStateBtn.Click += new System.EventHandler(this.showReqStateBtn_Click);
             // 
             // label1
             // 
@@ -71,38 +72,39 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Raise Request";
             // 
-            // button1
+            // submitRaiseReqBtn
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(769, 173);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 77);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Submit Raise Request";
-            this.button1.UseVisualStyleBackColor = true;
+            this.submitRaiseReqBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.submitRaiseReqBtn.Location = new System.Drawing.Point(769, 173);
+            this.submitRaiseReqBtn.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.submitRaiseReqBtn.Name = "submitRaiseReqBtn";
+            this.submitRaiseReqBtn.Size = new System.Drawing.Size(119, 77);
+            this.submitRaiseReqBtn.TabIndex = 14;
+            this.submitRaiseReqBtn.Text = "Submit Raise Request";
+            this.submitRaiseReqBtn.UseVisualStyleBackColor = true;
+            this.submitRaiseReqBtn.Click += new System.EventHandler(this.submitRaiseReqBtn_Click);
             // 
-            // raiseAmountTextBox
+            // newSalaryAmountTextBox
             // 
-            this.raiseAmountTextBox.Location = new System.Drawing.Point(630, 173);
-            this.raiseAmountTextBox.Name = "raiseAmountTextBox";
-            this.raiseAmountTextBox.Size = new System.Drawing.Size(105, 27);
-            this.raiseAmountTextBox.TabIndex = 16;
+            this.newSalaryAmountTextBox.Location = new System.Drawing.Point(641, 173);
+            this.newSalaryAmountTextBox.Name = "newSalaryAmountTextBox";
+            this.newSalaryAmountTextBox.Size = new System.Drawing.Size(105, 27);
+            this.newSalaryAmountTextBox.TabIndex = 16;
             // 
             // RaiseRequest_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.raiseAmountTextBox);
-            this.Controls.Add(this.myRequestsGrid);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.searchMyRequestsBtn);
+            this.Controls.Add(this.newSalaryAmountTextBox);
+            this.Controls.Add(this.raiseRequestsGrid);
+            this.Controls.Add(this.submitRaiseReqBtn);
+            this.Controls.Add(this.showReqStateBtn);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RaiseRequest_Form";
             this.Size = new System.Drawing.Size(895, 353);
-            ((System.ComponentModel.ISupportInitialize)(this.myRequestsGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raiseRequestsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,10 +112,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView myRequestsGrid;
-        private System.Windows.Forms.Button searchMyRequestsBtn;
+        private System.Windows.Forms.DataGridView raiseRequestsGrid;
+        private System.Windows.Forms.Button showReqStateBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox raiseAmountTextBox;
+        private System.Windows.Forms.Button submitRaiseReqBtn;
+        private System.Windows.Forms.TextBox newSalaryAmountTextBox;
     }
 }

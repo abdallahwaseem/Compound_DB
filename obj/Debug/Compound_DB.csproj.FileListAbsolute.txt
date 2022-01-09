@@ -47,5 +47,7 @@ D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compou
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.pdb
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.WorkingPanel_ControlForm.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.MyRequest_ControlForm.resources
-D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.csprojAssemblyReference.cache
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.RaiseRequest_Form.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.csprojAssemblyReference.cache
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.ChangePassword_Form.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.StaffSettings_Form.resources

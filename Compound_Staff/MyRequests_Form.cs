@@ -51,7 +51,7 @@ namespace Compound_DB.Compound_Staff
         {
             if (myRequestsIdsComboBox.SelectedIndex < 0)
             {
-                MessageBox.Show("Please select a request id to accept", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a request id first", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             var parent = this.Parent as Staff_Form;
