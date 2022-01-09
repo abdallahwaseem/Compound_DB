@@ -24,12 +24,21 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Height = workingPanelBtn.Height;
             sidePanel.Top = workingPanelBtn.Top;
             sidePanel.Left = workingPanelBtn.Left;
-
+            workingPanel_ControlForm1.BringToFront();
             departmentId = deptId;
             deparmentName = deptName;
             username = inputUsername;
             staffName = inputStaffName;
             staffId = id;
+        }
+
+        public int GetStaffId()
+        {
+            return staffId;
+        }
+        public int GetDeparmentId()
+        {
+            return departmentId;
         }
         private void Staff_Form_Load(object sender, EventArgs e)
         {
@@ -48,6 +57,7 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Height = workingPanelBtn.Height;
             sidePanel.Top = workingPanelBtn.Top;
             sidePanel.Left = workingPanelBtn.Left;
+            workingPanel_ControlForm1.BringToFront();
             workingPanelBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
 
@@ -61,6 +71,7 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Height = servicesBtn.Height;
             sidePanel.Top = servicesBtn.Top;
             sidePanel.Left = servicesBtn.Left;
+            myRequest_ControlForm1.BringToFront();
             servicesBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
 

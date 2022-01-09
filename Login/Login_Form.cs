@@ -35,10 +35,6 @@ namespace Compound_DB.Login
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
-        private void Login_Form_Load(object sender, EventArgs e)
-        {
-             
-        }
 
         private void login_btn_Click(object sender, EventArgs e)
         {

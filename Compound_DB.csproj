@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compound_Staff\MyRequests_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\MyRequests_Form.Designer.cs">
+      <DependentUpon>MyRequests_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compound_Staff\RaiseRequest_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compound_Staff\RaiseRequest_Form.Designer.cs">
+      <DependentUpon>RaiseRequest_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compound_Staff\Staff_Controller.cs" />
     <Compile Include="Compound_Staff\Staff_Form.cs">
       <SubType>Form</SubType>
@@ -100,6 +112,12 @@
     <Compile Include="Resident\Resident_Form.Designer.cs">
       <DependentUpon>Resident_Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compound_Staff\MyRequests_Form.resx">
+      <DependentUpon>MyRequests_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compound_Staff\RaiseRequest_Form.resx">
+      <DependentUpon>RaiseRequest_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compound_Staff\Staff_Form.resx">
       <DependentUpon>Staff_Form.cs</DependentUpon>
     </EmbeddedResource>
