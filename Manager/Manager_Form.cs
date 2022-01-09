@@ -25,11 +25,14 @@ namespace Compound_DB.Manager
             int nWidthEllipse,
             int nHeightEllipse
         );
-        public Manager_Form()
+        int managerId = 0;
+        string managerName = "";
+        public Manager_Form(int mgrId, string mgrName)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-
+            managerId = mgrId;
+            managerName = mgrName;
             sidePanel.Height = checkinvoiceBtn.Height;
             sidePanel.Top = checkinvoiceBtn.Top;
             sidePanel.Left = checkinvoiceBtn.Left;
@@ -43,8 +46,6 @@ namespace Compound_DB.Manager
             checkinvoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
 
         }
-
-
         private void addpenaltyBtn_Click(object sender, EventArgs e)
         {
             sidePanel.Height = addpenaltyBtn.Height;
@@ -127,5 +128,16 @@ namespace Compound_DB.Manager
 
         }
 
+        private void logOutBtn_Click(object sender, EventArgs e)
+        {
+            Login.Login_Form form = new Login.Login_Form();
+            form.Show();
+            this.Hide();
+        }
+
+        private void Manager_Form_Load(object sender, EventArgs e)
+        {
+            userNameLabel.Text = managerName;
+        }
     }
 }

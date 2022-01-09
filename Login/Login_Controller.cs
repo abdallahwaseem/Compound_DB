@@ -33,6 +33,17 @@ namespace Compound_DB.Login
             string query = "SELECT User_Type FROM Login_Details WHERE Login_Username = '" + username + "';";
             return (string)dbMan.ExecuteScalar(query);
         }
+
+        public string GetManagerName(string username)
+        {
+            string query = "SELECT Mgr_Name FROM Manager WHERE Username = '" + username + "';";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+        public int GetManagerId(string username)
+        {
+            string query = "SELECT ID FROM Manager WHERE Username = '" + username + "';";
+            return (int)dbMan.ExecuteScalar(query);
+        }
         public string GetStaffName(string username)
         {
             string query = "SELECT Staff_Name FROM Compound_Staff WHERE Username = '" + username + "';";

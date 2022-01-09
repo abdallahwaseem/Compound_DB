@@ -62,7 +62,11 @@ namespace Compound_DB.Login
             string userType = controllerObj.GetUserType(username_textbox.Text);
             if (userType == "Manager")
             {
-                Manager.Manager_Form f = new Manager.Manager_Form();
+                string managerName = controllerObj.GetManagerName(username_textbox.Text);
+                int managerId = controllerObj.GetManagerId(username_textbox.Text);
+
+
+                Manager.Manager_Form f = new Manager.Manager_Form(managerId, managerName);
                 f.Show();
                 this.Hide();
             }
