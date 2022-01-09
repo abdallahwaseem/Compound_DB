@@ -48,5 +48,6 @@ namespace Compound_DB.Manager
             invoicedataGridView.DataSource = dt;
             invoicedataGridView.Refresh();
         }
+
     }
 }

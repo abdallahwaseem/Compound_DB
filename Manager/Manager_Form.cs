@@ -69,7 +69,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = sellUnitBtn.Top;
             sidePanel.Left = sellUnitBtn.Left;
             sellUnitBtn.BackColor = Color.FromArgb(46, 51, 73);
-
+            sellingunitsUserControl1.BringToFront();
         }
 
         private void staffBtn_Click(object sender, EventArgs e)
@@ -88,6 +88,7 @@ namespace Compound_DB.Manager
             sidePanel.Top = residenceBtn.Top;
             sidePanel.Left = residenceBtn.Left;
             residenceBtn.BackColor = Color.FromArgb(46, 51, 73);
+            residentcontrol1.BringToFront();
 
         }
 

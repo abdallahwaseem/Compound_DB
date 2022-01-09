@@ -52,6 +52,7 @@ namespace Compound_DB.Manager
             this.sernameTextbox.Name = "sernameTextbox";
             this.sernameTextbox.Size = new System.Drawing.Size(121, 22);
             this.sernameTextbox.TabIndex = 0;
+            this.sernameTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sernameTextbox_KeyPress);
             // 
             // priTextbox
             // 
@@ -59,6 +60,7 @@ namespace Compound_DB.Manager
             this.priTextbox.Name = "priTextbox";
             this.priTextbox.Size = new System.Drawing.Size(121, 22);
             this.priTextbox.TabIndex = 1;
+            this.priTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priTextbox_KeyPress);
             // 
             // deptIDcomboBox
             // 
@@ -146,6 +148,7 @@ namespace Compound_DB.Manager
             this.updatepriceTextbox.Name = "updatepriceTextbox";
             this.updatepriceTextbox.Size = new System.Drawing.Size(121, 22);
             this.updatepriceTextbox.TabIndex = 5;
+            this.updatepriceTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.updatepriceTextbox_KeyPress);
             // 
             // label1
             // 
