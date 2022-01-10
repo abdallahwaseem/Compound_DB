@@ -30,39 +30,41 @@ namespace Compound_DB.Manager
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.raisesreqBtn = new System.Windows.Forms.Button();
-            this.settingsButton = new System.Windows.Forms.Button();
-            this.residenceBtn = new System.Windows.Forms.Button();
             this.sidePanel = new System.Windows.Forms.Panel();
-            this.logOutBtn = new System.Windows.Forms.Button();
-            this.staffBtn = new System.Windows.Forms.Button();
-            this.sellUnitBtn = new System.Windows.Forms.Button();
-            this.servicesBtn = new System.Windows.Forms.Button();
-            this.addpenaltyBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.userNameLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.compoundTitleLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.requestRaise1 = new Compound_DB.Manager.requestRaise();
             this.staff1 = new Compound_DB.Manager.staff();
             this.services1 = new Compound_DB.Manager.services();
             this.sellingunitsUserControl1 = new Compound_DB.Manager.sellingunitsUserControl();
             this.residentcontrol1 = new Compound_DB.Manager.residentcontrol();
             this.addPenalty1 = new Compound_DB.Manager.AddPenalty();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.statBtn = new System.Windows.Forms.Button();
+            this.raisesreqBtn = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
+            this.residenceBtn = new System.Windows.Forms.Button();
+            this.logOutBtn = new System.Windows.Forms.Button();
+            this.staffBtn = new System.Windows.Forms.Button();
+            this.sellUnitBtn = new System.Windows.Forms.Button();
+            this.servicesBtn = new System.Windows.Forms.Button();
+            this.addpenaltyBtn = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.statBtn);
             this.panel1.Controls.Add(this.raisesreqBtn);
             this.panel1.Controls.Add(this.settingsButton);
             this.panel1.Controls.Add(this.residenceBtn);
@@ -79,56 +81,6 @@ namespace Compound_DB.Manager
             this.panel1.Size = new System.Drawing.Size(249, 577);
             this.panel1.TabIndex = 1;
             // 
-            // raisesreqBtn
-            // 
-            this.raisesreqBtn.FlatAppearance.BorderSize = 0;
-            this.raisesreqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.raisesreqBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raisesreqBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.raisesreqBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.raisesreqBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.raisesreqBtn.Location = new System.Drawing.Point(3, 382);
-            this.raisesreqBtn.Name = "raisesreqBtn";
-            this.raisesreqBtn.Size = new System.Drawing.Size(246, 44);
-            this.raisesreqBtn.TabIndex = 9;
-            this.raisesreqBtn.Text = "Raises Request";
-            this.raisesreqBtn.UseVisualStyleBackColor = true;
-            this.raisesreqBtn.Click += new System.EventHandler(this.raisesreqBtn_Click);
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.settingsButton.Image = global::Compound_DB.Properties.Resources.Settings_Icon;
-            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsButton.Location = new System.Drawing.Point(0, 471);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(249, 50);
-            this.settingsButton.TabIndex = 8;
-            this.settingsButton.Text = "Settings";
-            this.settingsButton.UseVisualStyleBackColor = false;
-            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
-            // 
-            // residenceBtn
-            // 
-            this.residenceBtn.FlatAppearance.BorderSize = 0;
-            this.residenceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.residenceBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.residenceBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.residenceBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.residenceBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.residenceBtn.Location = new System.Drawing.Point(-3, 341);
-            this.residenceBtn.Name = "residenceBtn";
-            this.residenceBtn.Size = new System.Drawing.Size(246, 44);
-            this.residenceBtn.TabIndex = 3;
-            this.residenceBtn.Text = "Residence";
-            this.residenceBtn.UseVisualStyleBackColor = true;
-            this.residenceBtn.Click += new System.EventHandler(this.residenceBtn_Click);
-            this.residenceBtn.Leave += new System.EventHandler(this.residenceBtn_Leave);
-            // 
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(172)))), ((int)(((byte)(193)))));
@@ -136,92 +88,6 @@ namespace Compound_DB.Manager
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.Size = new System.Drawing.Size(14, 35);
             this.sidePanel.TabIndex = 2;
-            // 
-            // logOutBtn
-            // 
-            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.logOutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logOutBtn.FlatAppearance.BorderSize = 0;
-            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOutBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.logOutBtn.Image = global::Compound_DB.Properties.Resources.LogOut_Icon;
-            this.logOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutBtn.Location = new System.Drawing.Point(0, 527);
-            this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.Size = new System.Drawing.Size(249, 50);
-            this.logOutBtn.TabIndex = 1;
-            this.logOutBtn.Text = "Log Out";
-            this.logOutBtn.UseVisualStyleBackColor = false;
-            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
-            // 
-            // staffBtn
-            // 
-            this.staffBtn.FlatAppearance.BorderSize = 0;
-            this.staffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.staffBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.staffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.staffBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.staffBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.staffBtn.Location = new System.Drawing.Point(-3, 291);
-            this.staffBtn.Name = "staffBtn";
-            this.staffBtn.Size = new System.Drawing.Size(246, 44);
-            this.staffBtn.TabIndex = 1;
-            this.staffBtn.Text = "Staff";
-            this.staffBtn.UseVisualStyleBackColor = true;
-            this.staffBtn.Click += new System.EventHandler(this.staffBtn_Click);
-            this.staffBtn.Leave += new System.EventHandler(this.staffBtn_Leave);
-            // 
-            // sellUnitBtn
-            // 
-            this.sellUnitBtn.FlatAppearance.BorderSize = 0;
-            this.sellUnitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sellUnitBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellUnitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.sellUnitBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.sellUnitBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.sellUnitBtn.Location = new System.Drawing.Point(-3, 241);
-            this.sellUnitBtn.Name = "sellUnitBtn";
-            this.sellUnitBtn.Size = new System.Drawing.Size(246, 44);
-            this.sellUnitBtn.TabIndex = 1;
-            this.sellUnitBtn.Text = "Selling Units";
-            this.sellUnitBtn.UseVisualStyleBackColor = true;
-            this.sellUnitBtn.Click += new System.EventHandler(this.sellUnitBtn_Click);
-            this.sellUnitBtn.Leave += new System.EventHandler(this.sellUnitBtn_Leave);
-            // 
-            // servicesBtn
-            // 
-            this.servicesBtn.FlatAppearance.BorderSize = 0;
-            this.servicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.servicesBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.servicesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.servicesBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.servicesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.servicesBtn.Location = new System.Drawing.Point(-3, 191);
-            this.servicesBtn.Name = "servicesBtn";
-            this.servicesBtn.Size = new System.Drawing.Size(246, 44);
-            this.servicesBtn.TabIndex = 1;
-            this.servicesBtn.Text = "Services";
-            this.servicesBtn.UseVisualStyleBackColor = true;
-            this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);
-            this.servicesBtn.Leave += new System.EventHandler(this.servicesBtn_Leave);
-            // 
-            // addpenaltyBtn
-            // 
-            this.addpenaltyBtn.FlatAppearance.BorderSize = 0;
-            this.addpenaltyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addpenaltyBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addpenaltyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.addpenaltyBtn.Image = global::Compound_DB.Properties.Resources.Search_Icon;
-            this.addpenaltyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.addpenaltyBtn.Location = new System.Drawing.Point(-3, 141);
-            this.addpenaltyBtn.Name = "addpenaltyBtn";
-            this.addpenaltyBtn.Size = new System.Drawing.Size(246, 44);
-            this.addpenaltyBtn.TabIndex = 1;
-            this.addpenaltyBtn.Text = "Invoices Panel";
-            this.addpenaltyBtn.UseVisualStyleBackColor = true;
-            this.addpenaltyBtn.Click += new System.EventHandler(this.addpenaltyBtn_Click);
-            this.addpenaltyBtn.Leave += new System.EventHandler(this.addpenaltyBtn_Leave);
             // 
             // panel3
             // 
@@ -244,16 +110,6 @@ namespace Compound_DB.Manager
             this.userNameLabel.Size = new System.Drawing.Size(127, 25);
             this.userNameLabel.TabIndex = 1;
             this.userNameLabel.Text = "User Name";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Compound_DB.Properties.Resources.login_user;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(77, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // compoundTitleLabel
             // 
@@ -284,17 +140,6 @@ namespace Compound_DB.Manager
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(901, 148);
             this.panel2.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Image = global::Compound_DB.Properties.Resources.house_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(757, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(103, 96);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // requestRaise1
             // 
@@ -338,6 +183,179 @@ namespace Compound_DB.Manager
             this.addPenalty1.Size = new System.Drawing.Size(901, 433);
             this.addPenalty1.TabIndex = 9;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox3.Image = global::Compound_DB.Properties.Resources.house_logo;
+            this.pictureBox3.Location = new System.Drawing.Point(757, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(103, 96);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // statBtn
+            // 
+            this.statBtn.FlatAppearance.BorderSize = 0;
+            this.statBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.statBtn.Image = global::Compound_DB.Properties.Resources.stat_resized;
+            this.statBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.statBtn.Location = new System.Drawing.Point(3, 421);
+            this.statBtn.Name = "statBtn";
+            this.statBtn.Size = new System.Drawing.Size(246, 44);
+            this.statBtn.TabIndex = 9;
+            this.statBtn.Text = "Statistics";
+            this.statBtn.UseVisualStyleBackColor = true;
+            this.statBtn.Click += new System.EventHandler(this.statBtn_Click);
+            // 
+            // raisesreqBtn
+            // 
+            this.raisesreqBtn.FlatAppearance.BorderSize = 0;
+            this.raisesreqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raisesreqBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raisesreqBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.raisesreqBtn.Image = global::Compound_DB.Properties.Resources.salary_raise_resized;
+            this.raisesreqBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.raisesreqBtn.Location = new System.Drawing.Point(3, 375);
+            this.raisesreqBtn.Name = "raisesreqBtn";
+            this.raisesreqBtn.Size = new System.Drawing.Size(246, 44);
+            this.raisesreqBtn.TabIndex = 9;
+            this.raisesreqBtn.Text = "Raises Request";
+            this.raisesreqBtn.UseVisualStyleBackColor = true;
+            this.raisesreqBtn.Click += new System.EventHandler(this.raisesreqBtn_Click);
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.settingsButton.Image = global::Compound_DB.Properties.Resources.Settings_Icon;
+            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsButton.Location = new System.Drawing.Point(0, 471);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(249, 50);
+            this.settingsButton.TabIndex = 8;
+            this.settingsButton.Text = "Settings";
+            this.settingsButton.UseVisualStyleBackColor = false;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            // 
+            // residenceBtn
+            // 
+            this.residenceBtn.FlatAppearance.BorderSize = 0;
+            this.residenceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.residenceBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.residenceBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.residenceBtn.Image = global::Compound_DB.Properties.Resources.administrator_male_32px;
+            this.residenceBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.residenceBtn.Location = new System.Drawing.Point(-3, 334);
+            this.residenceBtn.Name = "residenceBtn";
+            this.residenceBtn.Size = new System.Drawing.Size(246, 44);
+            this.residenceBtn.TabIndex = 3;
+            this.residenceBtn.Text = "Residence";
+            this.residenceBtn.UseVisualStyleBackColor = true;
+            this.residenceBtn.Click += new System.EventHandler(this.residenceBtn_Click);
+            this.residenceBtn.Leave += new System.EventHandler(this.residenceBtn_Leave);
+            // 
+            // logOutBtn
+            // 
+            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.logOutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.logOutBtn.FlatAppearance.BorderSize = 0;
+            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.logOutBtn.Image = global::Compound_DB.Properties.Resources.LogOut_Icon;
+            this.logOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logOutBtn.Location = new System.Drawing.Point(0, 527);
+            this.logOutBtn.Name = "logOutBtn";
+            this.logOutBtn.Size = new System.Drawing.Size(249, 50);
+            this.logOutBtn.TabIndex = 1;
+            this.logOutBtn.Text = "Log Out";
+            this.logOutBtn.UseVisualStyleBackColor = false;
+            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
+            // 
+            // staffBtn
+            // 
+            this.staffBtn.FlatAppearance.BorderSize = 0;
+            this.staffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.staffBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.staffBtn.Image = global::Compound_DB.Properties.Resources.working_panel_resized;
+            this.staffBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.staffBtn.Location = new System.Drawing.Point(-3, 284);
+            this.staffBtn.Name = "staffBtn";
+            this.staffBtn.Size = new System.Drawing.Size(246, 44);
+            this.staffBtn.TabIndex = 1;
+            this.staffBtn.Text = "Staff";
+            this.staffBtn.UseVisualStyleBackColor = true;
+            this.staffBtn.Click += new System.EventHandler(this.staffBtn_Click);
+            this.staffBtn.Leave += new System.EventHandler(this.staffBtn_Leave);
+            // 
+            // sellUnitBtn
+            // 
+            this.sellUnitBtn.FlatAppearance.BorderSize = 0;
+            this.sellUnitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sellUnitBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sellUnitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.sellUnitBtn.Image = global::Compound_DB.Properties.Resources.salary_raise_resized;
+            this.sellUnitBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.sellUnitBtn.Location = new System.Drawing.Point(-3, 234);
+            this.sellUnitBtn.Name = "sellUnitBtn";
+            this.sellUnitBtn.Size = new System.Drawing.Size(246, 44);
+            this.sellUnitBtn.TabIndex = 1;
+            this.sellUnitBtn.Text = "Selling Units";
+            this.sellUnitBtn.UseVisualStyleBackColor = true;
+            this.sellUnitBtn.Click += new System.EventHandler(this.sellUnitBtn_Click);
+            this.sellUnitBtn.Leave += new System.EventHandler(this.sellUnitBtn_Leave);
+            // 
+            // servicesBtn
+            // 
+            this.servicesBtn.FlatAppearance.BorderSize = 0;
+            this.servicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.servicesBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.servicesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.servicesBtn.Image = global::Compound_DB.Properties.Resources.customer_service_;
+            this.servicesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.servicesBtn.Location = new System.Drawing.Point(-3, 184);
+            this.servicesBtn.Name = "servicesBtn";
+            this.servicesBtn.Size = new System.Drawing.Size(246, 44);
+            this.servicesBtn.TabIndex = 1;
+            this.servicesBtn.Text = "Services";
+            this.servicesBtn.UseVisualStyleBackColor = true;
+            this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);
+            this.servicesBtn.Leave += new System.EventHandler(this.servicesBtn_Leave);
+            // 
+            // addpenaltyBtn
+            // 
+            this.addpenaltyBtn.FlatAppearance.BorderSize = 0;
+            this.addpenaltyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addpenaltyBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addpenaltyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.addpenaltyBtn.Image = global::Compound_DB.Properties.Resources.invoice;
+            this.addpenaltyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addpenaltyBtn.Location = new System.Drawing.Point(-3, 134);
+            this.addpenaltyBtn.Name = "addpenaltyBtn";
+            this.addpenaltyBtn.Size = new System.Drawing.Size(246, 44);
+            this.addpenaltyBtn.TabIndex = 1;
+            this.addpenaltyBtn.Text = "Invoices Panel";
+            this.addpenaltyBtn.UseVisualStyleBackColor = true;
+            this.addpenaltyBtn.Click += new System.EventHandler(this.addpenaltyBtn_Click);
+            this.addpenaltyBtn.Leave += new System.EventHandler(this.addpenaltyBtn_Leave);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Compound_DB.Properties.Resources.login_user;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(77, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // Manager_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -359,10 +377,10 @@ namespace Compound_DB.Manager
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,5 +411,6 @@ namespace Compound_DB.Manager
         private staff staff1;
         private System.Windows.Forms.Button raisesreqBtn;
         private requestRaise requestRaise1;
+        private System.Windows.Forms.Button statBtn;
     }
 }

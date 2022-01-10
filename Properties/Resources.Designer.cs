@@ -63,6 +63,16 @@ namespace Compound_DB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administrator_male_32px {
+            get {
+                object obj = ResourceManager.GetObject("administrator_male_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_icon_resized {
             get {
                 object obj = ResourceManager.GetObject("back_icon_resized", resourceCulture);
@@ -246,6 +256,16 @@ namespace Compound_DB.Properties {
         internal static System.Drawing.Bitmap spaces {
             get {
                 object obj = ResourceManager.GetObject("spaces", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stat_resized {
+            get {
+                object obj = ResourceManager.GetObject("stat_resized", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

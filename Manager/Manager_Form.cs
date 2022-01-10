@@ -38,6 +38,7 @@ namespace Compound_DB.Manager
             sidePanel.Height = addpenaltyBtn.Height;
             sidePanel.Top = addpenaltyBtn.Top;
             sidePanel.Left = addpenaltyBtn.Left;
+            addPenalty1.BringToFront();
             addpenaltyBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
 
@@ -151,5 +152,11 @@ namespace Compound_DB.Manager
             this.Hide();
         }
 
+        private void statBtn_Click(object sender, EventArgs e)
+        {
+            Statistics_Form form = new Statistics_Form();
+            form.Show();
+            this.Hide();
+        }
     }
 }

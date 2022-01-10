@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -109,6 +116,18 @@
     <Compile Include="Manager\changePasswordForm.Designer.cs">
       <DependentUpon>changePasswordForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\Invoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\Invoice_Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Invoice_Report_Form.Designer.cs">
+      <DependentUpon>Invoice_Report_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\managerSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +170,24 @@
     </Compile>
     <Compile Include="Manager\staff.Designer.cs">
       <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Staff_Rating_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Staff_Rating_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\Staff_Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Staff_Report_Form.Designer.cs">
+      <DependentUpon>Staff_Report_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Statistics_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Statistics_Form.Designer.cs">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,6 +283,13 @@
     <EmbeddedResource Include="Manager\changePasswordForm.resx">
       <DependentUpon>changePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Invoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Invoice_Report_Form.resx">
+      <DependentUpon>Invoice_Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\managerSettingsForm.resx">
       <DependentUpon>managerSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +310,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\staff.resx">
       <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Staff_Rating_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Staff_Rating_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Staff_Report_Form.resx">
+      <DependentUpon>Staff_Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Statistics_Form.resx">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -376,6 +430,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\spaces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\administrator_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\stat_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
