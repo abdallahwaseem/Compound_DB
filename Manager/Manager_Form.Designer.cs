@@ -30,10 +30,7 @@ namespace Compound_DB.Manager
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< Updated upstream
-=======
             this.raisesreqBtn = new System.Windows.Forms.Button();
->>>>>>> Stashed changes
             this.settingsButton = new System.Windows.Forms.Button();
             this.residenceBtn = new System.Windows.Forms.Button();
             this.sidePanel = new System.Windows.Forms.Panel();
@@ -50,13 +47,7 @@ namespace Compound_DB.Manager
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-<<<<<<< Updated upstream
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.sellingunitsUserControl1 = new Compound_DB.Manager.sellingunitsUserControl();
-            this.residentcontrol1 = new Compound_DB.Manager.residentcontrol();
-=======
             this.requestRaise1 = new Compound_DB.Manager.requestRaise();
->>>>>>> Stashed changes
             this.staff1 = new Compound_DB.Manager.staff();
             this.services1 = new Compound_DB.Manager.services();
             this.sellingunitsUserControl1 = new Compound_DB.Manager.sellingunitsUserControl();
@@ -88,8 +79,6 @@ namespace Compound_DB.Manager
             this.panel1.Size = new System.Drawing.Size(249, 577);
             this.panel1.TabIndex = 1;
             // 
-<<<<<<< Updated upstream
-=======
             // raisesreqBtn
             // 
             this.raisesreqBtn.FlatAppearance.BorderSize = 0;
@@ -106,7 +95,6 @@ namespace Compound_DB.Manager
             this.raisesreqBtn.UseVisualStyleBackColor = true;
             this.raisesreqBtn.Click += new System.EventHandler(this.raisesreqBtn_Click);
             // 
->>>>>>> Stashed changes
             // settingsButton
             // 
             this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -122,10 +110,7 @@ namespace Compound_DB.Manager
             this.settingsButton.TabIndex = 8;
             this.settingsButton.Text = "Settings";
             this.settingsButton.UseVisualStyleBackColor = false;
-<<<<<<< Updated upstream
-=======
             this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
->>>>>>> Stashed changes
             // 
             // residenceBtn
             // 
@@ -300,27 +285,6 @@ namespace Compound_DB.Manager
             this.panel2.Size = new System.Drawing.Size(901, 148);
             this.panel2.TabIndex = 2;
             // 
-<<<<<<< Updated upstream
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(0, 154);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(0, 0);
-            this.panel4.TabIndex = 3;
-            // 
-            // compoundTitleLabel
-            // 
-            this.compoundTitleLabel.AutoSize = true;
-            this.compoundTitleLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compoundTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.compoundTitleLabel.Location = new System.Drawing.Point(733, 113);
-            this.compoundTitleLabel.Name = "compoundTitleLabel";
-            this.compoundTitleLabel.Size = new System.Drawing.Size(163, 25);
-            this.compoundTitleLabel.TabIndex = 1;
-            this.compoundTitleLabel.Text = "Cosmo Houses";
-            // 
-=======
->>>>>>> Stashed changes
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -332,18 +296,7 @@ namespace Compound_DB.Manager
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-<<<<<<< Updated upstream
-            // sellingunitsUserControl1
-            // 
-            this.sellingunitsUserControl1.Location = new System.Drawing.Point(247, 136);
-            this.sellingunitsUserControl1.Name = "sellingunitsUserControl1";
-            this.sellingunitsUserControl1.Size = new System.Drawing.Size(732, 428);
-            this.sellingunitsUserControl1.TabIndex = 7;
-            // 
-            // residentcontrol1
-=======
             // requestRaise1
->>>>>>> Stashed changes
             // 
             this.requestRaise1.Location = new System.Drawing.Point(249, 141);
             this.requestRaise1.Name = "requestRaise1";

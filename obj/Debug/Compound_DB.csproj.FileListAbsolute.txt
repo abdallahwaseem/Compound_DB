@@ -76,3 +76,6 @@ C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.chang
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.managerSettingsForm.resources
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.requestRaise.resources
 >>>>>>> Stashed changes
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.changePasswordForm.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.managerSettingsForm.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.requestRaise.resources
