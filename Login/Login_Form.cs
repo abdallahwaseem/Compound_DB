@@ -72,10 +72,15 @@ namespace Compound_DB.Login
             }
             else if (userType == "Resident")
             {
-                int id = 1;
-                string username = "a@rew.com";
-                string name = "Abdallah";
-                Resident.Resident_Form f = new Resident.Resident_Form(id, username, name);
+                //int id = 1;
+                //string username = "a@rew.com";
+                //string name = "Abdallah";
+                //Resident.Resident_Form f = new Resident.Resident_Form(id, username, name);
+                //f.Show();
+                //this.Hide();
+                string ResidentName = controllerObj.GetResidentName(username_textbox.Text);
+                int ResidentId = controllerObj.GetResidentId(username_textbox.Text);
+                Resident.Resident_Form f = new Resident.Resident_Form(ResidentId, ResidentName, username_textbox.Text);
                 f.Show();
                 this.Hide();
             }

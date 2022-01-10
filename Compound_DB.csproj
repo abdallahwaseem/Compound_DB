@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resident\Resident_controller.cs" />
     <Compile Include="Resident\Resident_Form.cs">
       <SubType>Form</SubType>
     </Compile>
