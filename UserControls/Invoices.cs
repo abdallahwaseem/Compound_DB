@@ -91,6 +91,10 @@ namespace Compound_DB.UserControls
         private void Invoices_Grid_Click(object sender, EventArgs e)
         {
             int Penalty = 0;
+            if (Invoices_Grid == null)
+            {
+                return;
+            }
             int amount = Int16.Parse(Invoices_Grid.CurrentRow.Cells[4].Value.ToString());
             if (Invoices_Grid.CurrentRow.Cells[5].Value != DBNull.Value)
                 Penalty = Int16.Parse(Invoices_Grid.CurrentRow.Cells[5].Value.ToString());

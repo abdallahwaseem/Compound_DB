@@ -84,7 +84,7 @@ namespace Compound_DB.Resident.UserControls
             this.confrim_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confrim_btn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confrim_btn.ForeColor = System.Drawing.Color.Black;
-            this.confrim_btn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            //this.confrim_btn.Image = global::Compound_DB.Properties.Resources.invoice6;
             this.confrim_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.confrim_btn.Location = new System.Drawing.Point(428, 330);
             this.confrim_btn.Name = "confrim_btn";

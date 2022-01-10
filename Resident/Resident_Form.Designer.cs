@@ -32,28 +32,28 @@
             this.sidePanel = new System.Windows.Forms.Panel();
             this.logOutBtn = new System.Windows.Forms.Button();
             this.parkingSlotBtn = new System.Windows.Forms.Button();
-            this.TransferOwnershipBtn = new System.Windows.Forms.Button();
-            this.entCodeBtn = new System.Windows.Forms.Button();
-            this.servicesBtn = new System.Windows.Forms.Button();
-            this.invoiceBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ID_label = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.compoundTitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.ID_label = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.TransferOwnershipBtn = new System.Windows.Forms.Button();
+            this.entCodeBtn = new System.Windows.Forms.Button();
+            this.servicesBtn = new System.Windows.Forms.Button();
+            this.invoiceBtn = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Nav_panel.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // Nav_panel
@@ -113,13 +113,136 @@
             this.parkingSlotBtn.Click += new System.EventHandler(this.parkingSlotBtn_Click);
             this.parkingSlotBtn.Leave += new System.EventHandler(this.parkingSlotBtn_Leave);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(64)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.ID_label);
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.userNameLabel);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(249, 148);
+            this.panel3.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label4.Location = new System.Drawing.Point(27, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 25);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ID:";
+            // 
+            // ID_label
+            // 
+            this.ID_label.AutoSize = true;
+            this.ID_label.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ID_label.Location = new System.Drawing.Point(72, 118);
+            this.ID_label.Name = "ID_label";
+            this.ID_label.Size = new System.Drawing.Size(42, 25);
+            this.ID_label.TabIndex = 3;
+            this.ID_label.Text = "ID";
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.userNameLabel.Location = new System.Drawing.Point(72, 98);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(127, 25);
+            this.userNameLabel.TabIndex = 1;
+            this.userNameLabel.Text = "User Name";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(105)))), ((int)(((byte)(75)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.compoundTitleLabel);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(249, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(702, 148);
+            this.panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(3, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(604, 47);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Where Comfort meets Elegance";
+            // 
+            // compoundTitleLabel
+            // 
+            this.compoundTitleLabel.AutoSize = true;
+            this.compoundTitleLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compoundTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.compoundTitleLabel.Location = new System.Drawing.Point(519, 108);
+            this.compoundTitleLabel.Name = "compoundTitleLabel";
+            this.compoundTitleLabel.Size = new System.Drawing.Size(163, 25);
+            this.compoundTitleLabel.TabIndex = 1;
+            this.compoundTitleLabel.Text = "Cosmo Houses";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(763, 137);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cosmo Residence";
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(249, 148);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(702, 429);
+            this.panelContainer.TabIndex = 2;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::Compound_DB.Properties.Resources.house_logo1;
+            this.pictureBox3.Location = new System.Drawing.Point(622, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(77, 75);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(831, -19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // TransferOwnershipBtn
             // 
             this.TransferOwnershipBtn.FlatAppearance.BorderSize = 0;
             this.TransferOwnershipBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TransferOwnershipBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransferOwnershipBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.TransferOwnershipBtn.Image = global::Compound_DB.Properties.Resources.sell__2_;
+            this.TransferOwnershipBtn.Image = global::Compound_DB.Properties.Resources.sell;
             this.TransferOwnershipBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.TransferOwnershipBtn.Location = new System.Drawing.Point(0, 311);
             this.TransferOwnershipBtn.Name = "TransferOwnershipBtn";
@@ -153,7 +276,7 @@
             this.servicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.servicesBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.servicesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.servicesBtn.Image = global::Compound_DB.Properties.Resources.customer_service__1_;
+            this.servicesBtn.Image = global::Compound_DB.Properties.Resources.customer_service_;
             this.servicesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.servicesBtn.Location = new System.Drawing.Point(0, 206);
             this.servicesBtn.Name = "servicesBtn";
@@ -170,7 +293,7 @@
             this.invoiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.invoiceBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invoiceBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.invoiceBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            this.invoiceBtn.Image = global::Compound_DB.Properties.Resources.invoice;
             this.invoiceBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.invoiceBtn.Location = new System.Drawing.Point(0, 155);
             this.invoiceBtn.Name = "invoiceBtn";
@@ -181,23 +304,10 @@
             this.invoiceBtn.Click += new System.EventHandler(this.invoiceBtn_Click);
             this.invoiceBtn.Leave += new System.EventHandler(this.invoiceBtn_Leave);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.ID_label);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.userNameLabel);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 148);
-            this.panel3.TabIndex = 0;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.ErrorImage = null;
-            this.pictureBox4.Image = global::Compound_DB.Properties.Resources.Picture11;
+            this.pictureBox4.Image = global::Compound_DB.Properties.Resources.login_user;
             this.pictureBox4.Location = new System.Drawing.Point(74, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 83);
@@ -205,119 +315,9 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // userNameLabel
-            // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.userNameLabel.Location = new System.Drawing.Point(72, 98);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(102, 20);
-            this.userNameLabel.TabIndex = 1;
-            this.userNameLabel.Text = "User Name";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(105)))), ((int)(((byte)(75)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.compoundTitleLabel);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(249, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(702, 148);
-            this.panel2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(33, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(472, 38);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Where Comfort meets Elegance";
-            // 
-            // compoundTitleLabel
-            // 
-            this.compoundTitleLabel.AutoSize = true;
-            this.compoundTitleLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compoundTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.compoundTitleLabel.Location = new System.Drawing.Point(519, 108);
-            this.compoundTitleLabel.Name = "compoundTitleLabel";
-            this.compoundTitleLabel.Size = new System.Drawing.Size(132, 20);
-            this.compoundTitleLabel.TabIndex = 1;
-            this.compoundTitleLabel.Text = "Cosmo Houses";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(763, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cosmo Residence";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Image = global::Compound_DB.Properties.Resources.Picture152;
-            this.pictureBox3.Location = new System.Drawing.Point(544, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(831, -19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(249, 148);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(702, 429);
-            this.panelContainer.TabIndex = 2;
-            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
-            // 
-            // ID_label
-            // 
-            this.ID_label.AutoSize = true;
-            this.ID_label.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ID_label.Location = new System.Drawing.Point(72, 118);
-            this.ID_label.Name = "ID_label";
-            this.ID_label.Size = new System.Drawing.Size(33, 20);
-            this.ID_label.TabIndex = 3;
-            this.ID_label.Text = "ID";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label4.Location = new System.Drawing.Point(27, 118);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "ID:";
-            // 
             // Resident_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
@@ -334,11 +334,11 @@
             this.Nav_panel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,10 +360,10 @@
         private System.Windows.Forms.Label compoundTitleLabel;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label userNameLabel;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label ID_label;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

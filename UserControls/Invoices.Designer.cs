@@ -158,7 +158,7 @@ namespace Compound_DB.UserControls
             this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfirmBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ConfirmBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            //this.ConfirmBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
             this.ConfirmBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ConfirmBtn.Location = new System.Drawing.Point(440, 71);
             this.ConfirmBtn.Name = "ConfirmBtn";

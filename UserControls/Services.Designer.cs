@@ -87,7 +87,7 @@ namespace Compound_DB.UserControls
             this.View_Req_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Req_btn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_Req_btn.ForeColor = System.Drawing.Color.Black;
-            this.View_Req_btn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            //this.View_Req_btn.Image = global::Compound_DB.Properties.Resources.invoice6;
             this.View_Req_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.View_Req_btn.Location = new System.Drawing.Point(19, 4);
             this.View_Req_btn.Name = "View_Req_btn";
@@ -103,7 +103,7 @@ namespace Compound_DB.UserControls
             this.RateSerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RateSerBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RateSerBtn.ForeColor = System.Drawing.Color.Black;
-            this.RateSerBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            //this.RateSerBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
             this.RateSerBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RateSerBtn.Location = new System.Drawing.Point(479, 4);
             this.RateSerBtn.Name = "RateSerBtn";
@@ -120,7 +120,7 @@ namespace Compound_DB.UserControls
             this.ReqSerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReqSerBtn.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReqSerBtn.ForeColor = System.Drawing.Color.Black;
-            this.ReqSerBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
+            //this.ReqSerBtn.Image = global::Compound_DB.Properties.Resources.invoice6;
             this.ReqSerBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReqSerBtn.Location = new System.Drawing.Point(246, 3);
             this.ReqSerBtn.Name = "ReqSerBtn";

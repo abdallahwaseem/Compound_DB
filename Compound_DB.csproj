@@ -143,6 +143,54 @@
     <Compile Include="Resident\Resident_Form.Designer.cs">
       <DependentUpon>Resident_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Entrance_code.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Entrance_code.Designer.cs">
+      <DependentUpon>Entrance_code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Invoices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ParkingSlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ParkingSlot.Designer.cs">
+      <DependentUpon>ParkingSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Rate_service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Rate_service.Designer.cs">
+      <DependentUpon>Rate_service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Req_service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Req_service.Designer.cs">
+      <DependentUpon>Req_service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SellUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SellUnit.Designer.cs">
+      <DependentUpon>SellUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\View_Req.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\View_Req.Designer.cs">
+      <DependentUpon>View_Req.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Compound_Staff\ChangePassword_Form.resx">
       <DependentUpon>ChangePassword_Form.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -199,6 +247,30 @@
     <EmbeddedResource Include="Resident\Resident_Form.resx">
       <DependentUpon>Resident_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Entrance_code.resx">
+      <DependentUpon>Entrance_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ParkingSlot.resx">
+      <DependentUpon>ParkingSlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Rate_service.resx">
+      <DependentUpon>Rate_service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Req_service.resx">
+      <DependentUpon>Req_service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SellUnit.resx">
+      <DependentUpon>SellUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\View_Req.resx">
+      <DependentUpon>View_Req.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -253,6 +325,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\back_icon_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\customer-service .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\spaces.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

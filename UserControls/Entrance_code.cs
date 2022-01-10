@@ -56,12 +56,14 @@ namespace Compound_DB.Resident.UserControls
             if (Result == 0)
             {
                 MessageBox.Show("Entrance code failure");
+                return;
             }
             else
             {
                 MessageBox.Show("Entrance code created");
             }
             DataTable Entrance_code = controllerObj.getEntranceCode(R_id, Visitor_NametxtBox.Text, Visit_Datepicker.Value);
+            //int.TryParse(Entrance_code.Rows[0]["Entrance_Code"].ToString(), out int code);
             int code = Convert.ToInt32(Entrance_code.Rows[0]["Entrance_Code"].ToString());
             CodeTxtbox.Text = code.ToString();
             EntranceCode.Show();

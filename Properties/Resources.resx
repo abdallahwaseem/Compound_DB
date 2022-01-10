@@ -127,14 +127,23 @@
   <data name="house_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\house_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer-service " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\customer-service .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_icon_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\back_icon_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\sell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exit_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\Exit_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Home_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Home_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="house_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\house_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\Search_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +157,15 @@
   <data name="checklist_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\checklist_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Home_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Home_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="entrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\entrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\login_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="working_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\working_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,7 +178,7 @@
   <data name="salary_raise_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\salary_raise_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back_icon_resized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\back_icon_resized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spaces" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\spaces.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,8 +63,6 @@ namespace Compound_DB.Resident.UserControls
                 MessageBox.Show("Error: cant rate this request it is not yet Complete");
                 return;
             }
-            
-
             DataTable dt2 = controllerObj.GetAssignedStaff_ID(Int32.Parse(req_listsComcobox.Text));
             int staffID = Convert.ToInt32(dt2.Rows[0]["Assigned_Staff_ID"].ToString());
 
