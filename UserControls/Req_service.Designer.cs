@@ -48,6 +48,7 @@ namespace Compound_DB.Resident.UserControls
             this.Select_Required_Service.Size = new System.Drawing.Size(196, 21);
             this.Select_Required_Service.TabIndex = 1;
             this.Select_Required_Service.Text = "Select Required Service";
+            this.Select_Required_Service.Click += new System.EventHandler(this.Select_Required_Service_Click);
             // 
             // service_required_on
             // 
@@ -62,11 +63,10 @@ namespace Compound_DB.Resident.UserControls
             // 
             // Service_NameTxtbox
             // 
+            this.Service_NameTxtbox.DropDownHeight = 115;
+            this.Service_NameTxtbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Service_NameTxtbox.FormattingEnabled = true;
-            this.Service_NameTxtbox.Items.AddRange(new object[] {
-            "Maintainance",
-            "Electricity",
-            "Pluming"});
+            this.Service_NameTxtbox.IntegralHeight = false;
             this.Service_NameTxtbox.Location = new System.Drawing.Point(225, 65);
             this.Service_NameTxtbox.Name = "Service_NameTxtbox";
             this.Service_NameTxtbox.Size = new System.Drawing.Size(182, 22);

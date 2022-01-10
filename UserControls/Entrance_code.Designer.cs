@@ -68,6 +68,7 @@ namespace Compound_DB.Resident.UserControls
             this.Visitor_NametxtBox.Name = "Visitor_NametxtBox";
             this.Visitor_NametxtBox.Size = new System.Drawing.Size(236, 22);
             this.Visitor_NametxtBox.TabIndex = 6;
+            this.Visitor_NametxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Visitor_NametxtBox_KeyPress);
             // 
             // Visit_Datepicker
             // 

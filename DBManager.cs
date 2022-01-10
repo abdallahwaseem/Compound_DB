@@ -11,8 +11,8 @@ namespace Compound_DB
     public class DBManager
     {
 
-        static string DB_Connection_String = @"Data Source=DESKTOP-UFF788G;Initial Catalog=Compound;Integrated Security=True";
-
+        static string DB_Connection_String = @"Data Source=DESKTOP-6UT7VLP\SQLEXPRESS;Initial Catalog=RCompound;Integrated Security=True";
+        
         SqlConnection myConnection;
 
         public DBManager()

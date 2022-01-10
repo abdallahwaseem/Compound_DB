@@ -46,6 +46,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.ID_label = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.Nav_panel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -182,6 +184,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(64)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.ID_label);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.userNameLabel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -194,9 +198,9 @@
             // 
             this.pictureBox4.ErrorImage = null;
             this.pictureBox4.Image = global::Compound_DB.Properties.Resources.Picture11;
-            this.pictureBox4.Location = new System.Drawing.Point(58, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(74, 12);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(129, 106);
+            this.pictureBox4.Size = new System.Drawing.Size(100, 83);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
@@ -206,7 +210,7 @@
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.userNameLabel.Location = new System.Drawing.Point(72, 120);
+            this.userNameLabel.Location = new System.Drawing.Point(72, 98);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(102, 20);
             this.userNameLabel.TabIndex = 1;
@@ -287,6 +291,29 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(702, 429);
             this.panelContainer.TabIndex = 2;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
+            // 
+            // ID_label
+            // 
+            this.ID_label.AutoSize = true;
+            this.ID_label.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ID_label.Location = new System.Drawing.Point(72, 118);
+            this.ID_label.Name = "ID_label";
+            this.ID_label.Size = new System.Drawing.Size(33, 20);
+            this.ID_label.TabIndex = 3;
+            this.ID_label.Text = "ID";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label4.Location = new System.Drawing.Point(27, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ID:";
             // 
             // Resident_Form
             // 
@@ -336,5 +363,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ID_label;
     }
 }

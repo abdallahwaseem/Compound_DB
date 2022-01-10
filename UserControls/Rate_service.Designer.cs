@@ -30,12 +30,16 @@ namespace Compound_DB.Resident.UserControls
         private void InitializeComponent()
         {
             this.Feedback = new System.Windows.Forms.Label();
-            this.Req_Id_txtBox = new System.Windows.Forms.TextBox();
             this.feedback_comboBox = new System.Windows.Forms.ComboBox();
-            this.Worker_rate_comboBox = new System.Windows.Forms.ComboBox();
             this.Enter_request_no = new System.Windows.Forms.Label();
             this.confrim_btn = new System.Windows.Forms.Button();
             this.Worker_Rating = new System.Windows.Forms.Label();
+            this.Star1 = new System.Windows.Forms.RadioButton();
+            this.Star5 = new System.Windows.Forms.RadioButton();
+            this.Star2 = new System.Windows.Forms.RadioButton();
+            this.Star3 = new System.Windows.Forms.RadioButton();
+            this.Star4 = new System.Windows.Forms.RadioButton();
+            this.req_listsComcobox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Feedback
@@ -49,28 +53,20 @@ namespace Compound_DB.Resident.UserControls
             this.Feedback.TabIndex = 2;
             this.Feedback.Text = "Overall Feedback";
             // 
-            // Req_Id_txtBox
-            // 
-            this.Req_Id_txtBox.Location = new System.Drawing.Point(216, 53);
-            this.Req_Id_txtBox.Name = "Req_Id_txtBox";
-            this.Req_Id_txtBox.Size = new System.Drawing.Size(240, 22);
-            this.Req_Id_txtBox.TabIndex = 3;
-            // 
             // feedback_comboBox
             // 
+            this.feedback_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.feedback_comboBox.FormattingEnabled = true;
+            this.feedback_comboBox.Items.AddRange(new object[] {
+            "Excellent",
+            "Very Good",
+            "Good",
+            "Satisfactory",
+            "Bad"});
             this.feedback_comboBox.Location = new System.Drawing.Point(216, 111);
             this.feedback_comboBox.Name = "feedback_comboBox";
             this.feedback_comboBox.Size = new System.Drawing.Size(240, 22);
             this.feedback_comboBox.TabIndex = 4;
-            // 
-            // Worker_rate_comboBox
-            // 
-            this.Worker_rate_comboBox.FormattingEnabled = true;
-            this.Worker_rate_comboBox.Location = new System.Drawing.Point(216, 171);
-            this.Worker_rate_comboBox.Name = "Worker_rate_comboBox";
-            this.Worker_rate_comboBox.Size = new System.Drawing.Size(240, 22);
-            this.Worker_rate_comboBox.TabIndex = 5;
             // 
             // Enter_request_no
             // 
@@ -98,6 +94,7 @@ namespace Compound_DB.Resident.UserControls
             this.confrim_btn.TabIndex = 6;
             this.confrim_btn.Text = "Confirm Rating";
             this.confrim_btn.UseVisualStyleBackColor = false;
+            this.confrim_btn.Click += new System.EventHandler(this.confrim_btn_Click);
             // 
             // Worker_Rating
             // 
@@ -110,16 +107,90 @@ namespace Compound_DB.Resident.UserControls
             this.Worker_Rating.TabIndex = 7;
             this.Worker_Rating.Text = "Rate the Worker";
             // 
+            // Star1
+            // 
+            this.Star1.AutoSize = true;
+            this.Star1.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Star1.Location = new System.Drawing.Point(174, 172);
+            this.Star1.Name = "Star1";
+            this.Star1.Size = new System.Drawing.Size(73, 24);
+            this.Star1.TabIndex = 9;
+            this.Star1.TabStop = true;
+            this.Star1.Text = "1 Star";
+            this.Star1.UseVisualStyleBackColor = true;
+            // 
+            // Star5
+            // 
+            this.Star5.AutoSize = true;
+            this.Star5.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Star5.Location = new System.Drawing.Point(520, 172);
+            this.Star5.Name = "Star5";
+            this.Star5.Size = new System.Drawing.Size(82, 24);
+            this.Star5.TabIndex = 10;
+            this.Star5.TabStop = true;
+            this.Star5.Text = "5 Stars";
+            this.Star5.UseVisualStyleBackColor = true;
+            // 
+            // Star2
+            // 
+            this.Star2.AutoSize = true;
+            this.Star2.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Star2.Location = new System.Drawing.Point(253, 172);
+            this.Star2.Name = "Star2";
+            this.Star2.Size = new System.Drawing.Size(83, 24);
+            this.Star2.TabIndex = 11;
+            this.Star2.TabStop = true;
+            this.Star2.Text = "2 Stars";
+            this.Star2.UseVisualStyleBackColor = true;
+            // 
+            // Star3
+            // 
+            this.Star3.AutoSize = true;
+            this.Star3.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Star3.Location = new System.Drawing.Point(344, 172);
+            this.Star3.Name = "Star3";
+            this.Star3.Size = new System.Drawing.Size(83, 24);
+            this.Star3.TabIndex = 12;
+            this.Star3.TabStop = true;
+            this.Star3.Text = "3 Stars";
+            this.Star3.UseVisualStyleBackColor = true;
+            // 
+            // Star4
+            // 
+            this.Star4.AutoSize = true;
+            this.Star4.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Star4.Location = new System.Drawing.Point(432, 172);
+            this.Star4.Name = "Star4";
+            this.Star4.Size = new System.Drawing.Size(82, 24);
+            this.Star4.TabIndex = 13;
+            this.Star4.TabStop = true;
+            this.Star4.Text = "4 Stars";
+            this.Star4.UseVisualStyleBackColor = true;
+            // 
+            // req_listsComcobox
+            // 
+            this.req_listsComcobox.BackColor = System.Drawing.Color.White;
+            this.req_listsComcobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.req_listsComcobox.FormattingEnabled = true;
+            this.req_listsComcobox.Location = new System.Drawing.Point(216, 56);
+            this.req_listsComcobox.Name = "req_listsComcobox";
+            this.req_listsComcobox.Size = new System.Drawing.Size(240, 22);
+            this.req_listsComcobox.TabIndex = 14;
+            // 
             // Rate_service
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
+            this.Controls.Add(this.req_listsComcobox);
+            this.Controls.Add(this.Star4);
+            this.Controls.Add(this.Star3);
+            this.Controls.Add(this.Star2);
+            this.Controls.Add(this.Star5);
+            this.Controls.Add(this.Star1);
             this.Controls.Add(this.Worker_Rating);
             this.Controls.Add(this.confrim_btn);
-            this.Controls.Add(this.Worker_rate_comboBox);
             this.Controls.Add(this.feedback_comboBox);
-            this.Controls.Add(this.Req_Id_txtBox);
             this.Controls.Add(this.Feedback);
             this.Controls.Add(this.Enter_request_no);
             this.Font = new System.Drawing.Font("Elephant", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,11 +205,15 @@ namespace Compound_DB.Resident.UserControls
 
         #endregion
         private System.Windows.Forms.Label Feedback;
-        private System.Windows.Forms.TextBox Req_Id_txtBox;
         private System.Windows.Forms.ComboBox feedback_comboBox;
-        private System.Windows.Forms.ComboBox Worker_rate_comboBox;
         private System.Windows.Forms.Label Enter_request_no;
         private System.Windows.Forms.Button confrim_btn;
         private System.Windows.Forms.Label Worker_Rating;
+        private System.Windows.Forms.RadioButton Star1;
+        private System.Windows.Forms.RadioButton Star5;
+        private System.Windows.Forms.RadioButton Star2;
+        private System.Windows.Forms.RadioButton Star3;
+        private System.Windows.Forms.RadioButton Star4;
+        private System.Windows.Forms.ComboBox req_listsComcobox;
     }
 }

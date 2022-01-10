@@ -17,3 +17,22 @@ C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserCo
 C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Resident.UserControls.Req_service.resources
 C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.UserControls.Services.resources
 C:\Users\user\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.UserControls.View_Req.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\bin\Debug\Compound_DB.exe.config
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\bin\Debug\Compound_DB.exe
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\bin\Debug\Compound_DB.pdb
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Login.Login_Form.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Properties.Resources.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.Resident_Form.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.UserControls.Entrance_code.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.UserControls.Invoices.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.UserControls.ParkingSlot.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.UserControls.Rate_service.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.UserControls.Req_service.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.Resident.UserControls.SellUnit.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.UserControls.Services.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.UserControls.View_Req.resources
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.csproj.GenerateResource.cache
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.exe
+C:\Users\user\Desktop\fall 2021\Database\DATABASEPROJ\obj\Debug\Compound_DB.pdb

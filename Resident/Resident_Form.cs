@@ -16,6 +16,10 @@ namespace Compound_DB.Resident
 {
     public partial class Resident_Form : Form
     {
+        int R_id;
+        string Email;
+        string R_Name;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -37,6 +41,7 @@ namespace Compound_DB.Resident
         }
         public Resident_Form(int id, string name, string email)
         {
+            
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
@@ -44,8 +49,11 @@ namespace Compound_DB.Resident
             sidePanel.Top = invoiceBtn.Top;
             sidePanel.Left = invoiceBtn.Left;
             invoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
-            
-       
+            R_id= id;
+            R_Name = name;
+            Email = email;
+            userNameLabel.Text = R_Name;
+            ID_label.Text = R_id.ToString();
 
         }
 
@@ -60,7 +68,7 @@ namespace Compound_DB.Resident
             sidePanel.Top = invoiceBtn.Top;
             sidePanel.Left = invoiceBtn.Left;
             invoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
-            Invoices I = new Invoices();
+            Invoices I = new Invoices(R_id, R_Name, Email);
             addUserControl(I);
         }
         private void invoiceBtn_Leave(object sender, EventArgs e)
@@ -73,7 +81,7 @@ namespace Compound_DB.Resident
             sidePanel.Top = servicesBtn.Top;
             sidePanel.Left = servicesBtn.Left;
             servicesBtn.BackColor = Color.FromArgb(46, 51, 73);
-            Services S = new Services();
+            Services S = new Services(R_id, R_Name, Email);
             addUserControl(S);
        
         }
@@ -89,7 +97,7 @@ namespace Compound_DB.Resident
             sidePanel.Top = entCodeBtn.Top;
             sidePanel.Left = entCodeBtn.Left;
             entCodeBtn.BackColor = Color.FromArgb(46, 51, 73);
-            Entrance_code E = new Entrance_code();
+            Entrance_code E = new Entrance_code(R_id, R_Name, Email);
             addUserControl(E);
         }
 
@@ -104,7 +112,7 @@ namespace Compound_DB.Resident
             sidePanel.Top = TransferOwnershipBtn.Top;
             sidePanel.Left = TransferOwnershipBtn.Left;
             TransferOwnershipBtn.BackColor = Color.FromArgb(46, 51, 73);
-            SellUnit SU = new SellUnit();
+            SellUnit SU = new SellUnit(R_id, R_Name, Email);
             addUserControl(SU);
         }
 
@@ -119,13 +127,18 @@ namespace Compound_DB.Resident
             sidePanel.Top = parkingSlotBtn.Top;
             sidePanel.Left = parkingSlotBtn.Left;
             parkingSlotBtn.BackColor = Color.FromArgb(46, 51, 73);
-            ParkingSlot PS = new ParkingSlot();
+            ParkingSlot PS = new ParkingSlot(R_id, R_Name, Email);
             addUserControl(PS);
         }
 
         private void parkingSlotBtn_Leave(object sender, EventArgs e)
         {
             parkingSlotBtn.BackColor = Color.FromArgb(0, 21, 64);
+        }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
