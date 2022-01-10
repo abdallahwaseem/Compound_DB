@@ -30,6 +30,7 @@ namespace Compound_DB.Manager
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.residenceBtn = new System.Windows.Forms.Button();
             this.sidePanel = new System.Windows.Forms.Panel();
             this.logOutBtn = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@ namespace Compound_DB.Manager
             this.compoundTitleLabel = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.settingsButton = new System.Windows.Forms.Button();
             this.sellingunitsUserControl1 = new Compound_DB.Manager.sellingunitsUserControl();
             this.residentcontrol1 = new Compound_DB.Manager.residentcontrol();
             this.staff1 = new Compound_DB.Manager.staff();
@@ -77,6 +77,22 @@ namespace Compound_DB.Manager
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 577);
             this.panel1.TabIndex = 1;
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.settingsButton.Image = global::Compound_DB.Properties.Resources.Settings_Icon;
+            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsButton.Location = new System.Drawing.Point(0, 471);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(249, 50);
+            this.settingsButton.TabIndex = 8;
+            this.settingsButton.Text = "Settings";
+            this.settingsButton.UseVisualStyleBackColor = false;
             // 
             // residenceBtn
             // 
@@ -262,7 +278,7 @@ namespace Compound_DB.Manager
             this.compoundTitleLabel.AutoSize = true;
             this.compoundTitleLabel.Font = new System.Drawing.Font("Elephant", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compoundTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.compoundTitleLabel.Location = new System.Drawing.Point(527, 113);
+            this.compoundTitleLabel.Location = new System.Drawing.Point(733, 113);
             this.compoundTitleLabel.Name = "compoundTitleLabel";
             this.compoundTitleLabel.Size = new System.Drawing.Size(163, 25);
             this.compoundTitleLabel.TabIndex = 1;
@@ -272,28 +288,12 @@ namespace Compound_DB.Manager
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureBox3.Image = global::Compound_DB.Properties.Resources.house_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(551, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(757, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(103, 96);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.settingsButton.Image = global::Compound_DB.Properties.Resources.Settings_Icon;
-            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsButton.Location = new System.Drawing.Point(0, 471);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(249, 50);
-            this.settingsButton.TabIndex = 8;
-            this.settingsButton.Text = "Settings";
-            this.settingsButton.UseVisualStyleBackColor = false;
             // 
             // sellingunitsUserControl1
             // 

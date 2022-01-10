@@ -140,5 +140,19 @@ namespace Compound_DB.Resident
         {
 
         }
+
+        private void logOutBtn_Click(object sender, EventArgs e)
+        {
+            Login.Login_Form form = new Login.Login_Form();
+            form.Show();
+            this.Hide();
+        }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            ChangePassword_Form f = new ChangePassword_Form(R_id, R_Name, Email);
+            f.Show();
+            this.Hide();
+        }
     }
 }

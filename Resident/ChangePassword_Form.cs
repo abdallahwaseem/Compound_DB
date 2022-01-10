@@ -8,25 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Compound_DB.Compound_Staff
+namespace Compound_DB.Resident
 {
     public partial class ChangePassword_Form : Form
     {
+        int R_id;
+        string R_username;
+        string R_Name;
         Login.Login_Controller controllerObj;
-        string username;
-        int staffId;
-        string staffName;
-        int departmentId;
-        string departmentName;
-        public ChangePassword_Form(int id, string name, string deptName, string staffUsername, int deptId)
+
+        public ChangePassword_Form(int id, string resName, string username)
         {
             InitializeComponent();
             controllerObj = new Login.Login_Controller();
-            staffId = id;
-            staffName = name;
-            departmentName = deptName;
-            username = staffUsername;
-            departmentId = deptId;
+            R_id = id;
+            R_username = username;
+            R_Name = resName;
+
         }
 
         private void updatePass_btn_Click(object sender, EventArgs e)
@@ -37,7 +35,7 @@ namespace Compound_DB.Compound_Staff
                 return;
             }
             string currentHashedPass = hashingPass(currentPassTextBox.Text);
-            string fetchedPassword = controllerObj.GetUserPassword(username);
+            string fetchedPassword = controllerObj.GetUserPassword(R_username);
             if (currentHashedPass != fetchedPassword)
             {
                 MessageBox.Show("Incorrect password.", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -49,7 +47,7 @@ namespace Compound_DB.Compound_Staff
                 return;
             }
             string passwordToBeSet = hashingPass(newPassTextBox.Text);
-            int result = controllerObj.ChangePassword(username, passwordToBeSet);
+            int result = controllerObj.ChangePassword(R_username, passwordToBeSet);
             if (result == 0)
             {
                 MessageBox.Show("Failed to changed password. Please check with your manger.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -59,13 +57,6 @@ namespace Compound_DB.Compound_Staff
             {
                 MessageBox.Show("Password changed successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
-
-        private void cancel_btn_Click(object sender, EventArgs e)
-        {
-            StaffSettings_Form form = new StaffSettings_Form(staffId, staffName, departmentName, username, departmentId);
-            form.Show();
-            this.Hide();
         }
 
         private string hashingPass(string inputString)
@@ -85,6 +76,11 @@ namespace Compound_DB.Compound_Staff
                 return sb.ToString();
             }
         }
-        
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Resident.Resident_Form f = new Resident.Resident_Form(R_id, R_Name, R_username);
+            f.Show();
+            this.Hide();
+        }
     }
 }

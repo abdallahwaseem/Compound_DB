@@ -79,7 +79,6 @@ namespace Compound_DB.UserControls
             Invoices_Grid.DataSource = dt;
             Invoices_Grid.Refresh();
         }
-
         private void All_Invoices_CheckedChanged(object sender, EventArgs e)
         {
             DataTable dt = controllerObj.ViewInvoices(R_id);
@@ -87,7 +86,6 @@ namespace Compound_DB.UserControls
             Invoices_Grid.Refresh();
 
         }
-
         private void Invoices_Grid_Click(object sender, EventArgs e)
         {
             int Penalty = 0;
