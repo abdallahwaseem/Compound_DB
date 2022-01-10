@@ -11,7 +11,6 @@ D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\Ph3\Compound Application\
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.exe.config
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.exe
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\bin\Debug\Compound_DB.pdb
-C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Login.Login_Form.resources
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.AddPenalty.resources
 C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.Manager_Form.resources
@@ -60,6 +59,7 @@ C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.selli
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Compound_Staff.ParkingSlotRequests_Form.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.residentcontrol.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.sellingunitsUserControl.resources
+<<<<<<< Updated upstream
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.csprojAssemblyReference.cache
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.Entrance_code.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.Invoices.resources
@@ -70,3 +70,9 @@ D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compou
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.Services.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.View_Req.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.ChangePassword_Form.resources
+=======
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Compound_Staff.ParkingSlotRequests_Form.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.changePasswordForm.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.managerSettingsForm.resources
+C:\Users\Lenovo\Documents\GitHub\Compound_DB\obj\Debug\Compound_DB.Manager.requestRaise.resources
+>>>>>>> Stashed changes

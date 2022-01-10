@@ -27,25 +27,25 @@ namespace Compound_DB.Manager
         );
         int managerId = 0;
         string managerName = "";
-        public Manager_Form(int mgrId, string mgrName)
+        string username = "";
+        public Manager_Form(int mgrId, string mgrName,string mgruName)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             managerId = mgrId;
             managerName = mgrName;
-            sidePanel.Height = checkinvoiceBtn.Height;
-            sidePanel.Top = checkinvoiceBtn.Top;
-            sidePanel.Left = checkinvoiceBtn.Left;
-            checkinvoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
+            username = mgruName;
+            sidePanel.Height = addpenaltyBtn.Height;
+            sidePanel.Top = addpenaltyBtn.Top;
+            sidePanel.Left = addpenaltyBtn.Left;
+            addpenaltyBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
-        private void checkinvoiceBtn_Click(object sender, EventArgs e)
-        {
-            sidePanel.Height = checkinvoiceBtn.Height;
-            sidePanel.Top = checkinvoiceBtn.Top;
-            sidePanel.Left = checkinvoiceBtn.Left;
-            checkinvoiceBtn.BackColor = Color.FromArgb(46, 51, 73);
 
+        public int GetManagerID()
+        {
+            return managerId;
         }
+
         private void addpenaltyBtn_Click(object sender, EventArgs e)
         {
             sidePanel.Height = addpenaltyBtn.Height;
@@ -92,11 +92,15 @@ namespace Compound_DB.Manager
             residentcontrol1.BringToFront();
 
         }
-
-        private void checkinvoiceBtn_Leave(object sender, EventArgs e)
+        private void raisesreqBtn_Click(object sender, EventArgs e)
         {
-            checkinvoiceBtn.BackColor = Color.FromArgb(24, 30, 54);
+            sidePanel.Height = residenceBtn.Height;
+            sidePanel.Top = residenceBtn.Top;
+            sidePanel.Left = residenceBtn.Left;
+            raisesreqBtn.BackColor = Color.FromArgb(46, 51, 73);
+            requestRaise1.BringToFront();
         }
+
 
         private void addpenaltyBtn_Leave(object sender, EventArgs e)
         {
@@ -139,5 +143,13 @@ namespace Compound_DB.Manager
         {
             userNameLabel.Text = managerName;
         }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            managerSettingsForm form = new managerSettingsForm(managerId, managerName, username);
+            form.Show();
+            this.Hide();
+        }
+
     }
 }

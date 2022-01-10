@@ -100,26 +100,41 @@ namespace Compound_DB.Manager
             return dbMan.ExecuteNonQuery(query);
         }
 
+        public int AcceptRequest(int staff_ID)
+        {
+            string query = "Update Raise_Request SET Req_Status='Accepted' Where Staff_ID="+staff_ID+";";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int RejectRequest(int staff_ID)
+        {
+            string query = "Update Raise_Request SET Req_Status='Rejected' Where Staff_ID=" + staff_ID + ";";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int UpdateNewSalary(int staff_ID,int new_salary)
+        {
+            string query = "Update Compound_Staff SET Salary ="+new_salary+" Where Staff_ID=" + staff_ID + ";";
+            return dbMan.ExecuteNonQuery(query);
+        }
         public int UpdatetOverdueInvoices()
         {
             DateTime today = DateTime.Today;
             string query = "UPDATE Invoice SET Inv_Status = 'Overdue' Where Due_Date <= '"+today+"';";
             return dbMan.ExecuteNonQuery(query);
         }
-        public DataTable ViewOverDueInvoices()
+        public DataTable ViewOverDueInvoices(int mgr_ID)
         {
-            string query = "Select R.R_Name ,I.Amount,I.Inv_Type,I.Inv_Status,I.Due_Date from Building B,Manager M,Resident R,Invoice I Where R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND I.Resident_ID=R.ID AND M.ID="+ 1 + " AND I.Inv_Status='Overdue' ;";
+            string query = "Select R.R_Name ,I.Amount,I.Inv_Type,I.Inv_Status,I.Due_Date from Building B,Manager M,Resident R,Invoice I Where R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND I.Resident_ID=R.ID AND M.ID="+ mgr_ID + " AND I.Inv_Status='Overdue' ;";
             return dbMan.ExecuteReader(query);
         }
 
-        public DataTable SelectInvoices()
+        public DataTable SelectInvoices(int mgr_ID)
         {
-            string query = "Select R.R_Name ,I.Amount,I.Inv_Type,I.Inv_Status,I.Due_Date from Building B,Manager M,Resident R,Invoice I Where R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND I.Resident_ID=R.ID AND M.ID="+1+"  ;";
+            string query = "Select R.R_Name ,I.Amount,I.Inv_Type,I.Inv_Status,I.Due_Date from Building B,Manager M,Resident R,Invoice I Where R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND I.Resident_ID=R.ID AND M.ID="+mgr_ID+"  ;";
             return  dbMan.ExecuteReader(query); 
         }
-        public DataTable PenaltyTotalAmount()
+        public DataTable PenaltyTotalAmount(int mgr_ID)
         {
-            string query = "Select R_Name,Amount,Penalty,(Amount+Penalty) as Total_Amount FROM Invoice I,Resident R Where R.ID=I.Resident_ID AND Inv_Status='Overdue';";
+            string query = "Select R_Name,Amount,Penalty,(Amount+Penalty) as Total_Amount FROM Invoice I,Resident R , Building B, Manager M Where R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND R.ID=I.Resident_ID AND Inv_Status='Overdue' AND M.ID="+mgr_ID+";";
             return dbMan.ExecuteReader(query);
         }
 
@@ -129,9 +144,9 @@ namespace Compound_DB.Manager
             return dbMan.ExecuteReader(query);
         }
 
-        public DataTable GetDept_ID()
+        public DataTable GetDept_Name(int manager_ID)
         {
-            string query = "SELECT ID FROM Department";
+            string query = "SELECT D_Name FROM Department WHERE Mgr_ID="+manager_ID+";";
             return dbMan.ExecuteReader(query);
         }
        
@@ -141,9 +156,9 @@ namespace Compound_DB.Manager
             return dbMan.ExecuteReader(query);
         }
 
-        public DataTable GetSer_Name()
+        public DataTable GetSer_Name(int manager_ID)
         {
-            string query = "SELECT Ser_Name FROM Provided_Services";
+            string query = "SELECT PS.Ser_Name FROM Provided_Services PS,Department D,Manager M Where PS.Dept_ID=D.ID AND D.Mgr_ID=M.ID AND M.ID="+manager_ID+"";
             return dbMan.ExecuteReader(query);
         }
 
@@ -153,14 +168,24 @@ namespace Compound_DB.Manager
             return dbMan.ExecuteReader(query);
         }
 
-        public DataTable GetBuilding_ID()
+        public DataTable Get_UsernameOccupant(int mgr_ID)
         {
-            string query = "SELECT ID FROM Building";
+            string query = "SELECT LD.Login_Username FROM Login_Details LD,Resident R,Building B,Manager M Where LD.User_Type='Resident' AND LD.Login_Username=R.Username AND R.Building_ID=B.ID AND B.Mgr_ID=M.ID AND M.ID="+mgr_ID+"; ";
             return dbMan.ExecuteReader(query);
         }
-        public DataTable GetUnit_ID()
+        public DataTable Get_UsernameStaff(int mgr_ID)
         {
-            string query = "SELECT ID FROM Unit";
+            string query = "SELECT LD.Login_Username FROM Login_Details LD,Compound_Staff C,Department D,Manager M Where LD.User_Type='Staff' AND LD.Login_Username=C.Username AND C.Dept_ID=D.ID AND D.Mgr_ID=M.ID AND M.ID="+mgr_ID+"; ";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetBuilding_ID(int mgr_Id)
+        {
+            string query = "SELECT ID FROM Building Where Mgr_ID = "+mgr_Id+"";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetUnit_ID(int buildingID)
+        {
+            string query = "SELECT ID FROM Unit Where Building_ID="+buildingID+"";
             return dbMan.ExecuteReader(query);
         }
 
@@ -169,15 +194,28 @@ namespace Compound_DB.Manager
             string query = " SELECT Staff_Name FROM Compound_Staff";
             return dbMan.ExecuteReader(query);
         }
-        public DataTable SelectSellingRequests()
+        public DataTable SelectSellingRequests(int mgr_Id)
         {
-            string query = "SELECT * FROM Selling_Request ;";
+            string query = "SELECT SR.*,R.R_Name FROM Selling_Request SR,Building B,Unit U,Manager M,Resident R Where U.Building_ID=B.ID AND B.Mgr_ID=M.ID AND SR.Resident_ID=R.ID AND SR.Building_ID=B.ID AND SR.Unit_ID=U.ID AND M.ID="+mgr_Id+" ;";
             return dbMan.ExecuteReader(query);
         }
 
-        public DataTable GetSellingRequest_ID()
+        public DataTable SelectRaisingRequests(int mgr_Id)
         {
-            string query = "SELECT Resident_ID FROM Selling_Request";
+            string query = "SELECT C.Username, RR.* From Raise_Request RR,Manager M,Compound_Staff C Where C.ID=RR.Staff_ID AND M.ID=RR.Manager_ID AND M.ID="+mgr_Id+"; ";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable GetSellingRequest_ID(int mgr_Id)
+        {
+            string query = "SELECT SR.Resident_ID FROM Selling_Request SR,Building B,Unit U,Manager M,Resident R Where U.Building_ID=B.ID AND B.Mgr_ID=M.ID AND SR.Resident_ID=R.ID AND SR.Building_ID=B.ID AND SR.Unit_ID=U.ID AND M.ID="+mgr_Id+"";
+            return dbMan.ExecuteReader(query);
+        }
+
+
+        public DataTable GetRaisingRequests(int mgr_Id)
+        {
+            string query = "SELECT  RR.Staff_ID  From Raise_Request RR,Manager M,Compound_Staff C Where C.ID=RR.Staff_ID AND M.ID=RR.Manager_ID AND M.ID=" + mgr_Id + "; ";
             return dbMan.ExecuteReader(query);
         }
         public void TerminateConnection()

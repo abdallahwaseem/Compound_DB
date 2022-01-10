@@ -103,12 +103,30 @@
     <Compile Include="Manager\AddPenalty.Designer.cs">
       <DependentUpon>AddPenalty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\changePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\changePasswordForm.Designer.cs">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\managerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\managerSettingsForm.Designer.cs">
+      <DependentUpon>managerSettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Manager_Controller.cs" />
     <Compile Include="Manager\Manager_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager\Manager_Form.Designer.cs">
       <DependentUpon>Manager_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\requestRaise.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\requestRaise.Designer.cs">
+      <DependentUpon>requestRaise.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\residentcontrol.cs">
       <SubType>UserControl</SubType>
@@ -225,8 +243,17 @@
     <EmbeddedResource Include="Manager\AddPenalty.resx">
       <DependentUpon>AddPenalty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\changePasswordForm.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\managerSettingsForm.resx">
+      <DependentUpon>managerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Manager_Form.resx">
       <DependentUpon>Manager_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\requestRaise.resx">
+      <DependentUpon>requestRaise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\residentcontrol.resx">
       <DependentUpon>residentcontrol.cs</DependentUpon>

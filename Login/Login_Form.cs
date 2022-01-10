@@ -66,7 +66,7 @@ namespace Compound_DB.Login
                 int managerId = controllerObj.GetManagerId(username_textbox.Text);
 
 
-                Manager.Manager_Form f = new Manager.Manager_Form(managerId, managerName);
+                Manager.Manager_Form f = new Manager.Manager_Form(managerId, managerName,username_textbox.Text);
                 f.Show();
                 this.Hide();
             }
