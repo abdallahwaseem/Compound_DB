@@ -112,6 +112,5 @@ namespace Compound_DB.Compound_Staff
             form.Show();
             this.Hide();
         }
-
     }
 }

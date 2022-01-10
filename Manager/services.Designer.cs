@@ -43,24 +43,22 @@ namespace Compound_DB.Manager
             this.label1 = new System.Windows.Forms.Label();
             this.sernamecomboBox = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.updatePrice.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sernameTextbox
             // 
-            this.sernameTextbox.Location = new System.Drawing.Point(26, 56);
+            this.sernameTextbox.Location = new System.Drawing.Point(40, 49);
             this.sernameTextbox.Name = "sernameTextbox";
-            this.sernameTextbox.Size = new System.Drawing.Size(121, 25);
+            this.sernameTextbox.Size = new System.Drawing.Size(121, 22);
             this.sernameTextbox.TabIndex = 0;
             this.sernameTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sernameTextbox_KeyPress);
             // 
             // priTextbox
             // 
-            this.priTextbox.Location = new System.Drawing.Point(26, 105);
+            this.priTextbox.Location = new System.Drawing.Point(40, 94);
             this.priTextbox.Name = "priTextbox";
-            this.priTextbox.Size = new System.Drawing.Size(121, 25);
+            this.priTextbox.Size = new System.Drawing.Size(121, 22);
             this.priTextbox.TabIndex = 1;
             this.priTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priTextbox_KeyPress);
             // 
@@ -68,42 +66,42 @@ namespace Compound_DB.Manager
             // 
             this.deptIDcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deptIDcomboBox.FormattingEnabled = true;
-            this.deptIDcomboBox.Location = new System.Drawing.Point(26, 154);
+            this.deptIDcomboBox.Location = new System.Drawing.Point(40, 159);
             this.deptIDcomboBox.Name = "deptIDcomboBox";
-            this.deptIDcomboBox.Size = new System.Drawing.Size(121, 26);
+            this.deptIDcomboBox.Size = new System.Drawing.Size(121, 24);
             this.deptIDcomboBox.TabIndex = 2;
             this.deptIDcomboBox.DropDown += new System.EventHandler(this.deptIDcomboBox_DropDown);
             // 
             // serviceTextbox
             // 
             this.serviceTextbox.AutoSize = true;
-            this.serviceTextbox.Location = new System.Drawing.Point(23, 35);
+            this.serviceTextbox.Location = new System.Drawing.Point(37, 29);
             this.serviceTextbox.Name = "serviceTextbox";
-            this.serviceTextbox.Size = new System.Drawing.Size(103, 18);
+            this.serviceTextbox.Size = new System.Drawing.Size(96, 17);
             this.serviceTextbox.TabIndex = 3;
             this.serviceTextbox.Text = "Service Name";
             // 
             // priceTextbox
             // 
             this.priceTextbox.AutoSize = true;
-            this.priceTextbox.Location = new System.Drawing.Point(24, 84);
+            this.priceTextbox.Location = new System.Drawing.Point(37, 74);
             this.priceTextbox.Name = "priceTextbox";
-            this.priceTextbox.Size = new System.Drawing.Size(45, 18);
+            this.priceTextbox.Size = new System.Drawing.Size(40, 17);
             this.priceTextbox.TabIndex = 4;
             this.priceTextbox.Text = "Price";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 133);
+            this.label3.Location = new System.Drawing.Point(37, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 18);
+            this.label3.Size = new System.Drawing.Size(99, 17);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Department Name";
+            this.label3.Text = "Department ID";
             // 
             // addservicesBtn
             // 
-            this.addservicesBtn.Location = new System.Drawing.Point(26, 199);
+            this.addservicesBtn.Location = new System.Drawing.Point(40, 220);
             this.addservicesBtn.Name = "addservicesBtn";
             this.addservicesBtn.Size = new System.Drawing.Size(121, 40);
             this.addservicesBtn.TabIndex = 6;
@@ -118,10 +116,9 @@ namespace Compound_DB.Manager
             this.updatePrice.Controls.Add(this.updatepriceTextbox);
             this.updatePrice.Controls.Add(this.label1);
             this.updatePrice.Controls.Add(this.sernamecomboBox);
-            this.updatePrice.Font = new System.Drawing.Font("Elephant", 8.25F);
-            this.updatePrice.Location = new System.Drawing.Point(276, 3);
+            this.updatePrice.Location = new System.Drawing.Point(227, 49);
             this.updatePrice.Name = "updatePrice";
-            this.updatePrice.Size = new System.Drawing.Size(254, 257);
+            this.updatePrice.Size = new System.Drawing.Size(436, 211);
             this.updatePrice.TabIndex = 7;
             this.updatePrice.TabStop = false;
             this.updatePrice.Text = "Update Service\'s Price";
@@ -141,7 +138,7 @@ namespace Compound_DB.Manager
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(20, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 18);
+            this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Price";
             // 
@@ -149,7 +146,7 @@ namespace Compound_DB.Manager
             // 
             this.updatepriceTextbox.Location = new System.Drawing.Point(23, 110);
             this.updatepriceTextbox.Name = "updatepriceTextbox";
-            this.updatepriceTextbox.Size = new System.Drawing.Size(121, 25);
+            this.updatepriceTextbox.Size = new System.Drawing.Size(121, 22);
             this.updatepriceTextbox.TabIndex = 5;
             this.updatepriceTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.updatepriceTextbox_KeyPress);
             // 
@@ -158,7 +155,7 @@ namespace Compound_DB.Manager
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 18);
+            this.label1.Size = new System.Drawing.Size(96, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Service Name";
             // 
@@ -168,40 +165,28 @@ namespace Compound_DB.Manager
             this.sernamecomboBox.FormattingEnabled = true;
             this.sernamecomboBox.Location = new System.Drawing.Point(23, 56);
             this.sernamecomboBox.Name = "sernamecomboBox";
-            this.sernamecomboBox.Size = new System.Drawing.Size(121, 26);
+            this.sernamecomboBox.Size = new System.Drawing.Size(121, 24);
             this.sernamecomboBox.TabIndex = 3;
             this.sernamecomboBox.DropDown += new System.EventHandler(this.sernamecomboBox_DropDown);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.addservicesBtn);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.priceTextbox);
-            this.groupBox1.Controls.Add(this.serviceTextbox);
-            this.groupBox1.Controls.Add(this.deptIDcomboBox);
-            this.groupBox1.Controls.Add(this.priTextbox);
-            this.groupBox1.Controls.Add(this.sernameTextbox);
-            this.groupBox1.Font = new System.Drawing.Font("Elephant", 8.25F);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(241, 257);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add Service";
             // 
             // services
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.updatePrice);
+            this.Controls.Add(this.addservicesBtn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.priceTextbox);
+            this.Controls.Add(this.serviceTextbox);
+            this.Controls.Add(this.deptIDcomboBox);
+            this.Controls.Add(this.priTextbox);
+            this.Controls.Add(this.sernameTextbox);
             this.Name = "services";
-            this.Size = new System.Drawing.Size(895, 353);
+            this.Size = new System.Drawing.Size(732, 423);
             this.updatePrice.ResumeLayout(false);
             this.updatePrice.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -221,6 +206,5 @@ namespace Compound_DB.Manager
         private System.Windows.Forms.TextBox updatepriceTextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox sernamecomboBox;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

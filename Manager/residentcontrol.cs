@@ -24,13 +24,7 @@ namespace Compound_DB.Manager
 
         private void BuildingIDComboBox_DropDown(object sender, EventArgs e)
         {
-            var parent = this.Parent as Manager_Form;
-            int mgr_ID = parent.GetManagerID();
-            DataTable dt = controllerObj.GetBuilding_ID(mgr_ID);
-            if (dt == null)
-            {
-                return;
-            }
+            DataTable dt = controllerObj.GetBuilding_ID();
             BuildingIDComboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -41,18 +35,8 @@ namespace Compound_DB.Manager
 
         private void unitidcomboBox_DropDown(object sender, EventArgs e)
         {
-            if (BuildingIDComboBox.SelectedIndex < 0)
-            {
-                MessageBox.Show("Please select a Building ID first", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            int.TryParse(BuildingIDComboBox.SelectedItem.ToString(), out int buildingID);
-            DataTable dt = controllerObj.GetUnit_ID(buildingID);
-            if (dt == null)
-            {
-                return;
-            }
-            unitidcomboBox.Items.Clear();
+            DataTable dt = controllerObj.GetUnit_ID();
+             unitidcomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
                 object item = row["ID"];
@@ -139,13 +123,7 @@ namespace Compound_DB.Manager
 
         private void updateresdcomboBox_DropDown(object sender, EventArgs e)
         {
-            var parent = this.Parent as Manager_Form;
-            int mgr_ID = parent.GetManagerID();
-            DataTable dt = controllerObj.Get_UsernameOccupant(mgr_ID);
-            if (dt == null)
-            {
-                return;
-            }
+            DataTable dt = controllerObj.Get_Username("Resident");
             updateresdnamecomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -194,13 +172,7 @@ namespace Compound_DB.Manager
 
         private void occupantresidentComboBox_DropDown(object sender, EventArgs e)
         {
-            var parent = this.Parent as Manager_Form;
-            int mgr_ID = parent.GetManagerID();
-            DataTable dt = controllerObj.Get_UsernameOccupant(mgr_ID);
-            if (dt == null)
-            {
-                return;
-            }
+            DataTable dt = controllerObj.Get_Username("Resident");
             occupantresidentComboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -276,6 +248,5 @@ namespace Compound_DB.Manager
                 e.Handled = true;
             }
         }
-
     }
 }

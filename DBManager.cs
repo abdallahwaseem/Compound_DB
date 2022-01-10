@@ -10,12 +10,7 @@ namespace Compound_DB
 {
     public class DBManager
     {
-<<<<<<< Updated upstream
         static string DB_Connection_String = @"Data Source=DESKTOP-UFF788G;Initial Catalog=Compound;Integrated Security=True";
-=======
-
-        static string DB_Connection_String = @"Data Source=DESKTOP-BIDDQTC\SQLEXPRESS;Initial Catalog=Compound12;Integrated Security=True";
->>>>>>> Stashed changes
 
         SqlConnection myConnection;
 
