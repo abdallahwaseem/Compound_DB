@@ -66,16 +66,15 @@ namespace Compound_DB.Login
                 int managerId = controllerObj.GetManagerId(username_textbox.Text);
 
 
-                Manager.Manager_Form f = new Manager.Manager_Form(managerId, managerName);
+                Manager.Manager_Form f = new Manager.Manager_Form(managerId, managerName,username_textbox.Text);
                 f.Show();
                 this.Hide();
             }
             else if (userType == "Resident")
             {
-                int id = 1;
-                string username = "a@rew.com";
-                string name = "Abdallah";
-                Resident.Resident_Form f = new Resident.Resident_Form(id, username, name);
+                string ResidentName = controllerObj.GetResidentName(username_textbox.Text);
+                int ResidentId = controllerObj.GetResidentId(username_textbox.Text);
+                Resident.Resident_Form f = new Resident.Resident_Form(ResidentId, ResidentName, username_textbox.Text);
                 f.Show();
                 this.Hide();
             }

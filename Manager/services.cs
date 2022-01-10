@@ -22,11 +22,17 @@ namespace Compound_DB.Manager
 
         private void deptIDcomboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.GetDept_ID();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.GetDept_Name(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             deptIDcomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
-                object item = row["ID"];
+                object item = row["D_Name"];
                 deptIDcomboBox.Items.Add(item);
             }
         }
@@ -64,7 +70,13 @@ namespace Compound_DB.Manager
 
         private void sernamecomboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.GetSer_Name();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.GetSer_Name(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             sernamecomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {

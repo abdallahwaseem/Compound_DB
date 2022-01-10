@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,12 +110,42 @@
     <Compile Include="Manager\AddPenalty.Designer.cs">
       <DependentUpon>AddPenalty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\changePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\changePasswordForm.Designer.cs">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Invoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\Invoice_Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Invoice_Report_Form.Designer.cs">
+      <DependentUpon>Invoice_Report_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\managerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\managerSettingsForm.Designer.cs">
+      <DependentUpon>managerSettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Manager_Controller.cs" />
     <Compile Include="Manager\Manager_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager\Manager_Form.Designer.cs">
       <DependentUpon>Manager_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\requestRaise.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\requestRaise.Designer.cs">
+      <DependentUpon>requestRaise.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\residentcontrol.cs">
       <SubType>UserControl</SubType>
@@ -134,13 +171,86 @@
     <Compile Include="Manager\staff.Designer.cs">
       <DependentUpon>staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\Staff_Rating_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Staff_Rating_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\Staff_Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Staff_Report_Form.Designer.cs">
+      <DependentUpon>Staff_Report_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Statistics_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Statistics_Form.Designer.cs">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resident\ChangePassword_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resident\ChangePassword_Form.Designer.cs">
+      <DependentUpon>ChangePassword_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resident\Resident_controller.cs" />
     <Compile Include="Resident\Resident_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Resident\Resident_Form.Designer.cs">
       <DependentUpon>Resident_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Entrance_code.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Entrance_code.Designer.cs">
+      <DependentUpon>Entrance_code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Invoices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ParkingSlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ParkingSlot.Designer.cs">
+      <DependentUpon>ParkingSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Rate_service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Rate_service.Designer.cs">
+      <DependentUpon>Rate_service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Req_service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Req_service.Designer.cs">
+      <DependentUpon>Req_service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SellUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SellUnit.Designer.cs">
+      <DependentUpon>SellUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\View_Req.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\View_Req.Designer.cs">
+      <DependentUpon>View_Req.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Compound_Staff\ChangePassword_Form.resx">
       <DependentUpon>ChangePassword_Form.cs</DependentUpon>
@@ -170,8 +280,24 @@
     <EmbeddedResource Include="Manager\AddPenalty.resx">
       <DependentUpon>AddPenalty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\changePasswordForm.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Invoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Invoice_Report_Form.resx">
+      <DependentUpon>Invoice_Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\managerSettingsForm.resx">
+      <DependentUpon>managerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Manager_Form.resx">
       <DependentUpon>Manager_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\requestRaise.resx">
+      <DependentUpon>requestRaise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\residentcontrol.resx">
       <DependentUpon>residentcontrol.cs</DependentUpon>
@@ -185,6 +311,16 @@
     <EmbeddedResource Include="Manager\staff.resx">
       <DependentUpon>staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Staff_Rating_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Staff_Rating_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Staff_Report_Form.resx">
+      <DependentUpon>Staff_Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Statistics_Form.resx">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -195,8 +331,35 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resident\ChangePassword_Form.resx">
+      <DependentUpon>ChangePassword_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resident\Resident_Form.resx">
       <DependentUpon>Resident_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Entrance_code.resx">
+      <DependentUpon>Entrance_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ParkingSlot.resx">
+      <DependentUpon>ParkingSlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Rate_service.resx">
+      <DependentUpon>Rate_service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Req_service.resx">
+      <DependentUpon>Req_service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SellUnit.resx">
+      <DependentUpon>SellUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\View_Req.resx">
+      <DependentUpon>View_Req.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -252,6 +415,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pictures\back_icon_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\customer-service .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\spaces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\administrator_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\stat_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

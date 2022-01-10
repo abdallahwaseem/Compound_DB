@@ -56,7 +56,5 @@ namespace Compound_DB.Compound_Staff
             f.Show();
             this.Hide();
         }
-
-        
     }
 }

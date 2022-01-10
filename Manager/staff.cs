@@ -23,11 +23,17 @@ namespace Compound_DB.Manager
 
         private void DeptIDComboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.GetDept_ID();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.GetDept_Name(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             DeptIDComboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
-                object item = row["ID"];
+                object item = row["D_Name"];
                 DeptIDComboBox.Items.Add(item);
             }
         }
@@ -111,7 +117,13 @@ namespace Compound_DB.Manager
 
         private void staffidcomboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.Get_Username("Staff");
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.Get_UsernameStaff(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             staffidcomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -142,7 +154,13 @@ namespace Compound_DB.Manager
         }
         private void updatestaffnamecomboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.Get_Username("Staff");
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.Get_UsernameStaff(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             updatestaffnamecomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -154,6 +172,10 @@ namespace Compound_DB.Manager
         private void newDeptIDcomboBox_DropDown(object sender, EventArgs e)
         {
             DataTable dt = controllerObj.GetDept_Name();
+            if (dt == null)
+            {
+                return;
+            }
             newDeptIDcomboBox.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -291,6 +313,7 @@ namespace Compound_DB.Manager
                 e.Handled = true;
             }
         }
+
     }
 }
 

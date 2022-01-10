@@ -20,16 +20,24 @@ namespace Compound_DB.Manager
             controllerObj = new Manager_Controller();
         }
 
-        private void viewinvoicesBtn_Click(object sender, EventArgs e)
+        private void viewsellingsBtn_Click(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.SelectSellingRequests();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.SelectSellingRequests(mgr_ID);
+            if (dt == null)
+            {
+                return;
+            }
             sellingunitsdataGrid.DataSource = dt;
             sellingunitsdataGrid.Refresh();
         }
 
         private void sellingresdComboBox_DropDown(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.GetSellingRequest_ID();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.GetSellingRequest_ID(mgr_ID);
             if (dt == null)
             {
                 return;
@@ -42,7 +50,7 @@ namespace Compound_DB.Manager
             }
         }
 
-        private void addpenaltyBtn_Click(object sender, EventArgs e)
+        private void addrequestBtn_Click(object sender, EventArgs e)
         {
             if (sellingresdComboBox.Text == "")
             {

@@ -27,15 +27,19 @@ namespace Compound_DB.Manager
 
         private void viewinvoicesBtn_Click(object sender, EventArgs e)
         {
-            DataTable dt = controllerObj.SelectInvoices();
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
+            DataTable dt = controllerObj.SelectInvoices(mgr_ID);
             invoicedataGridView.DataSource = dt;
             invoicedataGridView.Refresh();
         }
 
         private void showoverdueBtn_Click(object sender, EventArgs e)
         {
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
             int result = controllerObj.UpdatetOverdueInvoices();
-            DataTable dt = controllerObj.ViewOverDueInvoices();
+            DataTable dt = controllerObj.ViewOverDueInvoices(mgr_ID);
             invoicedataGridView.DataSource = dt;
             invoicedataGridView.Refresh();
 
@@ -43,8 +47,10 @@ namespace Compound_DB.Manager
 
         private void addpenaltyBtn_Click(object sender, EventArgs e)
         {
+            var parent = this.Parent as Manager_Form;
+            int mgr_ID = parent.GetManagerID();
             int result = controllerObj.UpdatePenalty();
-            DataTable dt = controllerObj.PenaltyTotalAmount();
+            DataTable dt = controllerObj.PenaltyTotalAmount(mgr_ID);
             invoicedataGridView.DataSource = dt;
             invoicedataGridView.Refresh();
         }
