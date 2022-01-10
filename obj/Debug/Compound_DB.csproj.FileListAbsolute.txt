@@ -61,3 +61,12 @@ D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compou
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.residentcontrol.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Manager.sellingunitsUserControl.resources
 D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.csprojAssemblyReference.cache
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.Entrance_code.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.Invoices.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.ParkingSlot.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.Rate_service.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.Req_service.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.UserControls.SellUnit.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.Services.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.UserControls.View_Req.resources
+D:\Abdallah backup2\handasa\3CCE\Fall\Database\Project\ph3 code\obj\Debug\Compound_DB.Resident.ChangePassword_Form.resources
