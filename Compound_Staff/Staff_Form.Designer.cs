@@ -49,6 +49,7 @@
             this.raiseRequest_Form1 = new Compound_DB.Compound_Staff.RaiseRequest_Form();
             this.myRequest_ControlForm1 = new Compound_DB.Compound_Staff.MyRequest_ControlForm();
             this.workingPanel_ControlForm1 = new Compound_DB.Compound_Staff.WorkingPanel_ControlForm();
+            this.parkingSlotRequests_Form1 = new Compound_DB.Compound_Staff.ParkingSlotRequests_Form();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -318,12 +319,22 @@
             this.workingPanel_ControlForm1.Size = new System.Drawing.Size(895, 353);
             this.workingPanel_ControlForm1.TabIndex = 2;
             // 
+            // parkingSlotRequests_Form1
+            // 
+            this.parkingSlotRequests_Form1.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Bold);
+            this.parkingSlotRequests_Form1.Location = new System.Drawing.Point(249, 180);
+            this.parkingSlotRequests_Form1.Margin = new System.Windows.Forms.Padding(4);
+            this.parkingSlotRequests_Form1.Name = "parkingSlotRequests_Form1";
+            this.parkingSlotRequests_Form1.Size = new System.Drawing.Size(895, 353);
+            this.parkingSlotRequests_Form1.TabIndex = 5;
+            // 
             // Staff_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(223)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(1150, 577);
+            this.Controls.Add(this.parkingSlotRequests_Form1);
             this.Controls.Add(this.raiseRequest_Form1);
             this.Controls.Add(this.myRequest_ControlForm1);
             this.Controls.Add(this.workingPanel_ControlForm1);
@@ -370,5 +381,6 @@
         private MyRequest_ControlForm myRequest_ControlForm1;
         private RaiseRequest_Form raiseRequest_Form1;
         private System.Windows.Forms.Button settingsButton;
+        private ParkingSlotRequests_Form parkingSlotRequests_Form1;
     }
 }

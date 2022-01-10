@@ -26,15 +26,11 @@ namespace Compound_DB.Compound_Staff
             departmentName = deptName;
             username = staffUsername;
             departmentId = deptId;
-
             controllerObj = new Staff_Controller();
-
         }
         private void StaffSettings_Form_Load(object sender, EventArgs e)
         {
             name_textbox.Text = staffName;
-
-            //dob_textbox.Text = controllerObj.GetStaffDoB(staffId) == null ? "" : controllerObj.GetStaffDoB(staffId);
             phoneNum_textbox.Text = controllerObj.GetStaffPhoneNum(staffId) == null ? "" : controllerObj.GetStaffPhoneNum(staffId);
             double currentSalary = 0;
             DataTable dt = controllerObj.GetSalary(staffId);
@@ -45,12 +41,9 @@ namespace Compound_DB.Compound_Staff
             }
             salary_textbox.Text = currentSalary.ToString();
             rating_textbox.Text = controllerObj.GetStaffRating(staffId).ToString();
-            //gender_textbox.Text = controllerObj.GetStaffGender(staffId).ToString() == null ? "" : controllerObj.GetStaffGender(staffId).ToString();
             deptName_textbox.Text = departmentName;
-
             username_textbox.Text = username;
         }
-
         private void backBtn_Click(object sender, EventArgs e)
         {
             Compound_Staff.Staff_Form f = new Compound_Staff.Staff_Form(staffId, staffName, username, departmentId, departmentName);

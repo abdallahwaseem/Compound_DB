@@ -19,7 +19,6 @@ namespace Compound_DB.Compound_Staff
             InitializeComponent();
             controllerObj = new Staff_Controller();
         }
-
         private void searchMyRequestsBtn_Click(object sender, EventArgs e)
         {
             var parent = this.Parent as Staff_Form;
@@ -28,7 +27,6 @@ namespace Compound_DB.Compound_Staff
             myRequestsGrid.DataSource = dt;
             myRequestsGrid.Refresh();
         }
-
         private void myRequestsIdsComboBox_DropDown(object sender, EventArgs e)
         {
             var parent = this.Parent as Staff_Form;

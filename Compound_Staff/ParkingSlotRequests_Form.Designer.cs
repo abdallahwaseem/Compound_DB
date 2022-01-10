@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.assignParkingSlot = new System.Windows.Forms.Button();
             this.emptySlotsIdsComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlotRequestsGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +72,7 @@
             this.searchEmptyParkingSlot.TabIndex = 7;
             this.searchEmptyParkingSlot.Text = "Search Empty Slot";
             this.searchEmptyParkingSlot.UseVisualStyleBackColor = true;
-            this.searchEmptyParkingSlot.Click += new System.EventHandler(this.assignParkingSlotRequest_Click);
+            this.searchEmptyParkingSlot.Click += new System.EventHandler(this.searchEmptyParkingSlot_Click);
             // 
             // searchParkingSlotRequestsBtn
             // 
@@ -113,12 +115,32 @@
             this.emptySlotsIdsComboBox.Name = "emptySlotsIdsComboBox";
             this.emptySlotsIdsComboBox.Size = new System.Drawing.Size(121, 28);
             this.emptySlotsIdsComboBox.TabIndex = 10;
-            this.emptySlotsIdsComboBox.DropDown += new System.EventHandler(this.parkingSlotRequestsIdsComboBox_DropDown);
+            this.emptySlotsIdsComboBox.DropDown += new System.EventHandler(this.emptySlotsIdsComboBox_DropDown);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(616, 222);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 20);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Empty Slots IDs";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(616, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Requests IDs";
             // 
             // ParkingSlotRequests_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.emptySlotsIdsComboBox);
             this.Controls.Add(this.parkingSlotRequestsIdsComboBox);
             this.Controls.Add(this.parkingSlotRequestsGrid);
@@ -145,5 +167,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button assignParkingSlot;
         private System.Windows.Forms.ComboBox emptySlotsIdsComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

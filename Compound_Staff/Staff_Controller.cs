@@ -37,10 +37,20 @@ namespace Compound_DB.Compound_Staff
 
         public DataTable GetEmptyParkingSlotsIds(int requestId)
         {
-            string query = "SELECT Parking.ID FROM Parking_Slot as Parking WHERE Parking.Parking_Slot_Status = 'Empty' " +
+            string query = "SELECT Parking.ID, Parking.Building_ID, Parking.Parking_Slot_Status FROM Parking_Slot as Parking WHERE Parking.Parking_Slot_Status = 'Available' " +
                            "AND Parking.Building_ID IN (SELECT Res.Building_ID FROM Resident Res WHERE Res.ID IN " +
                            "( SELECT Req.Resident_ID FROM Request Req WHERE Req.ID = " + requestId + "))";
             return dbMan.ExecuteReader(query);
+        }
+        public int AssignParkingSlot(int parkingSlotId, int residentId)
+        {
+            string query = "UPDATE Parking_Slot	SET Parking_Slot_Status = 'Occupied', Resident_ID = " + residentId + "WHERE ID = "+ parkingSlotId;
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int GetResidentIdFromReqID(int reqId)
+        {
+            string query = "SELECT Resident_ID FROM Request WHERE ID = " + reqId;
+            return (int)dbMan.ExecuteScalar(query);
         }
 
         public DataTable GetMyRequestsDetails(int staffId)
@@ -94,24 +104,6 @@ namespace Compound_DB.Compound_Staff
         {
             string query = "SELECT Staff_Name , New_Salary, Req_Status FROM Raise_Request, Compound_Staff WHERE Staff_ID = ID AND Staff_ID = " + staffId;
             return dbMan.ExecuteReader(query);
-        }
-
-        //public DataTable GetRaiseRequests(int staffId)
-        //{
-        //    string query = "SELECT Staff_Name , New_Salary, Req_Status FROM Raise_Request, Compound_Staff WHERE Staff_ID = ID AND Staff_ID = " + staffId;
-        //    return dbMan.ExecuteReader(query);
-        //}
-        // TODO update two queries below
-        public string GetStaffDoB(int staffId)
-        {
-            string query = "SELECT DoB FROM Compound_Staff WHERE ID = " + staffId;
-
-            return (string)dbMan.ExecuteScalar(query);
-        }
-        public char GetStaffGender(int staffId)
-        {
-            string query = "SELECT Gender FROM Compound_Staff WHERE ID = " + staffId;
-            return (char)dbMan.ExecuteScalar(query);
         }
         public double GetStaffRating(int staffId)
         {

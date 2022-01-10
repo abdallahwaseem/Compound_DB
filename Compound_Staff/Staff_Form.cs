@@ -84,6 +84,7 @@ namespace Compound_DB.Compound_Staff
             sidePanel.Height = parkingBtn.Height;
             sidePanel.Top = parkingBtn.Top;
             sidePanel.Left = parkingBtn.Left;
+            parkingSlotRequests_Form1.BringToFront();
             parkingBtn.BackColor = Color.FromArgb(46, 51, 73);
         }
         private void parkingBtn_Leave(object sender, EventArgs e)
